@@ -83,11 +83,12 @@ que soit le trafic.
 ### 🔴 3.4 Pas de mode hors-ligne
 
 En montagne, le réseau est souvent absent. Champi et Expert de Cueillette vendent le
-hors-ligne. Le prototype n'a ni PWA ni paquets de zones. Le GPX et le KMZ ne compensent qu'en
-partie, via une appli tierce.
-**Action** : PWA avec téléchargement du **massif acheté** (tuiles d'habitat + dernière
-projection météo + fond IGN autorisé hors-ligne, §5.3). C'est la fonction qui justifie le pass
-(S1/S3).
+hors-ligne ; Komoot, Visorando, Cartes IGN et OsmAnd le proposent par région (doc 05 §10.3). Le
+prototype n'a ni PWA ni paquets de zones. Le GPX et le KMZ ne compensent qu'en partie, via une
+appli tierce.
+**Action** : télécharger le **massif acheté** (tuiles d'habitat, dernière projection météo, fond
+Protomaps auto-hébergé, §5.3). C'est la fonction qui justifie le pass (S1/S3). Le **support**
+(PWA ou appli hybride) est discuté au §3.6.
 
 ### 🟠 3.5 Une seule région, figée
 
@@ -97,6 +98,33 @@ pourtant un bon choix de départ : l'Isère est 3ᵉ de France en observations d
 **Action** : rester sur les **Alpes du Nord** (ajouter Savoie et Haute-Savoie) pour la première
 saison payante. Industrialiser l'ajout de zone (un fichier de configuration par massif) avant
 d'aller vers le Jura.
+
+### 🟠 3.6 Application mobile : l'intuition du porteur est juste pour iOS, pas encore prouvée pour le lancement
+
+Le porteur juge une vraie appli mobile « un vrai plus, voire indispensable », pour le hors-ligne
+et parce que le public installe des applis depuis les stores, pas des PWA. Vérification
+(détail et sources en doc 05 §10) :
+
+- **Hors-ligne : fondé sur iOS.** Une PWA peut perdre ses données. Safari efface les données
+  écrites par script après 7 jours d'usage sans interaction, et aucune exemption n'est
+  documentée pour les applis de l'écran d'accueil. Le stockage persistant y est accordé « selon
+  des heuristiques ». Une appli native range ses paquets dans un dossier que le système ne purge
+  pas. Sur Android (~64 % du trafic mobile en France), Chrome donne jusqu'à 60 % du disque et le
+  stockage persistant suffit.
+- **Usages : plausible, non mesuré.** Aucun taux d'installation indépendant des PWA n'existe.
+  Les applis de terrain sont natives, mais dans cette niche les acteurs web seulement
+  (Chasseurs de champignons, Mycora, The Mycologist) ont l'audience la plus visible.
+- **Hybride : Capacitor seulement.** C'est le seul des trois cadres cités qui reprend
+  l'interface Vue telle quelle ; React Native et Flutter imposent de la réécrire.
+- **Coût réel.** Sur iOS, un pass vendu dans l'appli passe par l'achat intégré (règle 3.1.1 ;
+  la règle 3.1.3(b) exige de le proposer aussi en achat intégré). Avec la TVA collectée par le
+  store et 15 % de commission, le net d'un pass à 19 € tombe de ≈ 14,40 € à ≈ 9,40–10,60 €. Il
+  faut ajouter ~120 € de frais la première année, la publication de l'adresse du vendeur (DSA),
+  la revue Apple et 3 à 5 semaines de travail.
+
+**Action** : rendre le code hors-ligne **portable** dès la phase 1 (~1 jour), lancer en PWA avec
+des atténuations iOS, mesurer pendant la saison des morilles, puis décider au 15/06/2027
+(option A, doc 05 §10.7). **Le choix du calendrier revient au porteur** (doc 05 §8, point 4).
 
 ## 4. 🔴 Preuve : un score non validé ne se vend pas honnêtement
 
@@ -162,6 +190,10 @@ d'ingestion. À arbitrer selon le budget, qui n'est pas précisé.
 **Action** : passer aux **fonds IGN de la Géoplateforme** (Plan IGN, orthophotos, sous Licence
 Ouverte ; le SCAN 25 reste sous licence et est exclu), ou à un fournisseur de tuiles sous
 contrat. **Conditions de service et hors-ligne à vérifier** avant de construire la PWA.
+Pour les **paquets hors-ligne**, l'extrait **Protomaps auto-hébergé** (PMTiles, attribution
+OSM) est la voie retenue (doc 05 §4.2) : la politique des tuiles OSM interdit le
+pré-téléchargement, et les conditions du hors-ligne de la Géoplateforme IGN ne sont pas
+vérifiées (doc 05 §10.3). Cela vaut pour une PWA comme pour une appli.
 
 ### 🟠 5.4 Licences des données : globalement favorables, avec deux vigilances
 
@@ -310,7 +342,7 @@ ne demandent que l'attribution, puisqu'on ne modifie pas la base.
 | 3 | Avertissement « pas d'avis sur la comestibilité », bonnes pratiques de cueillette, CGU/CGV (§5.1) | 🔴 | 2–3 jours (+ relecture juridique) |
 | 4 | Déploiement de production minimal (§3.1) | 🔴 | 2–3 jours |
 | 5 | Paiement, pass, résiliation simple (§3.2) | 🔴 | 3–5 jours |
-| 6 | PWA hors-ligne par massif (§3.4) | 🔴 terrain | 1–2 semaines |
+| 6 | Hors-ligne par massif (§3.4), code portable vers Capacitor (§3.6) | 🔴 terrain | 1–2 semaines (+~1 jour) |
 | 7 | Habitat statique + météo planifiée (§3.3) | 🟠 | 1 semaine |
 | 8 | Mode simple, onboarding, mobile d'abord (§6) | 🟠 | 1–2 semaines |
 | 9 | Forêts publiques et « marche estimée » (§5.5) | 🟠 | 2–3 jours |
@@ -319,6 +351,7 @@ ne demandent que l'attribution, puisqu'on ne modifie pas la base.
 | 12 | « Le Bon Versant » : domaines, recherche d'antériorité, dépôt INPI, nom dans l'interface (§6, doc 05 §9) | 🟠 | ½ jour + ~190–230 € INPI |
 | 13 | Dépôt privé + licence propriétaire + conformité ODbL, option A retenue (§9) | 🔴 | < 1 jour |
 | 14 | Création de la micro-entreprise, médiateur, mentions légales (§5.8) | 🟠 | ½–1 jour + 30–80 €/an (non vérifié) |
+| 15 | Applis hybrides iOS et Android (§3.6) : calendrier à arbitrer par le porteur | 🟠 | +3 à 5 semaines + ~120 € la 1ʳᵉ année ; −26 à −35 % de net par pass vendu dans l'appli |
 
 *Les efforts sont des ordres de grandeur pour un développeur seul qui connaît le code ; ce ne
 sont pas des engagements.*

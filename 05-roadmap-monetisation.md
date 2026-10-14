@@ -17,6 +17,7 @@ critères d'arrêt), `aso` (si passage aux stores).*
 | Coûts | **Scénario minimal** au départ, montée ligne par ligne si besoin ; relecture juridique **non chiffrée** | §4 |
 | Statut | **Micro-entreprise en création** (régime classique) | Franchise de TVA, cotisations sur le chiffre d'affaires, médiateur obligatoire (doc 04 §5.8) |
 | Nom | **« Le Bon Versant »** retenu (« Myco Map » écarté) | Suites pratiques au §9 : domaines, marque, renommage du dépôt plus tard |
+| Appli mobile | Le porteur la juge « un vrai plus, voire indispensable » (hors-ligne, habitudes des stores) ; **arbitrage du calendrier en attente** | Analyse et options au §10 ; question au §8 |
 
 ---
 
@@ -148,7 +149,7 @@ pousse à résilier après la poussée ; c'est le problème vécu chez Chasseurs
 | Prix moyen (19–29 €) | Couvre les coûts avec peu d'acheteurs ; cohérent avec la valeur empilée | Exige une preuve (validation) | ✅ à tester |
 | Abonnement mensuel | Revenu récurrent apparent | Inadapté à la saisonnalité ; résiliations ; support | ❌ |
 | Freemium généreux | Audience | Contraire au choix du porteur ; coûts serveur et météo | ❌ |
-| Appli native sur les stores | Visibilité ASO | Commission, revue, double maintenance | ⏸ plus tard (§7) |
+| Appli hybride sur les stores (Capacitor) | Hors-ligne fiable sur iOS ; visibilité dans les stores ; habitude d'installation | −26 à −35 % de net par pass vendu dans l'appli, ~120 € de frais la 1ʳᵉ année, +3 à 5 semaines de travail, revue Apple | ⏸ à arbitrer (§10) : recommandé après une saison de mesure |
 | B2B (offices de tourisme, accompagnateurs) | Revenus plus gros par client | Vente active, hors cible B2C | ⏸ option 2028+ |
 | Identification (photo **ou pédagogique**) | Attente des novices | Responsabilité, 35–49 % de fiabilité en photo, marché saturé ; **hors périmètre par décision du porteur** | ❌ définitif |
 | Prévente / passes fondateurs | Trésorerie et preuve d'achat avant la fin du développement | Engagement de livraison ; refusé par le porteur | ❌ |
@@ -221,7 +222,7 @@ sont pas convertis à un taux précis : on prend 0,85 à 0,95 € par dollar, ta
 | **Paiement** | Stripe : **1,5 % + 0,25 €** par carte de l'EEE, sans abonnement ; Checkout inclus | Idem ; Stripe Tax en option : 0,5 % par transaction (no-code) | [stripe.com/fr/pricing](https://stripe.com/fr/pricing) |
 | **Sauvegardes** | Sauvegardes Hetzner (20 %) ou copie vers R2 (gratuit sous 10 Go) | Les deux | Voir §4.2 |
 | **Supervision** | UptimeRobot **gratuit** (50 sondes, 5 min ; décrit comme « pour projets hobby et non-profit », usage commercial **non confirmé**) + Sentry **Developer gratuit** (1 utilisateur, 5 000 erreurs/mois) | UptimeRobot **Solo : 9 €/mois** en annuel (108 €/an) ; Sentry Team (26 $/mois) jugé superflu | [uptimerobot.com/pricing](https://uptimerobot.com/pricing/), [sentry.io/pricing](https://sentry.io/pricing/) |
-| **Stores** (plus tard, §7) | — | Apple : ~99 $/an ; Google Play : ~25 $ une fois | Sources secondaires ([splitmetrics](https://splitmetrics.com/blog/google-play-apple-app-store-fees/)), **à confirmer** |
+| **Stores** (si applis, §10) | — | Apple : **99 $/an** (99 € selon des sources françaises, non vérifié chez Apple) ; Google Play : **25 $ une fois** ; commissions de 10 à 15 % **sur le prix hors TVA**, la TVA étant collectée par le store | [aide Google Play](https://support.google.com/googleplay/android-developer/answer/113468), [Apple Newsroom](https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/) ; détail au §10.4 |
 | **Relecture juridique** (CGU/CGV, lecture de l'ODbL) | **Non chiffré** | **Non chiffré** | Pas de budget fixé par le porteur |
 | **Médiateur de la consommation** (obligatoire en B2C) | **30 à 80 €/an** | Idem | Source commerciale, **non vérifié** ([portail-autoentrepreneur.fr](https://www.portail-autoentrepreneur.fr/academie/creation-auto-entreprise/mediation-consommation)) |
 | **Cotisations sociales** (micro-entreprise) | ~21,4 % du chiffre d'affaires (déjà déduit dans le net par pass, §3.4) | Idem | Sources secondaires, à confirmer sur urssaf.fr |
@@ -255,7 +256,8 @@ Météo-France s'avère trop coûteuse en temps, est **Open-Meteo Standard**. Le
 dépasse 100 envois par jour, puis la supervision payante.
 
 **Ponctuel** : dépôt de marque INPI ~190 € (≈ 13 passes, une fois pour 10 ans).
-**Non compris** : relecture juridique, impôt sur le revenu, CFE, temps passé, matériel, stores.
+**Non compris** : relecture juridique, impôt sur le revenu, CFE, temps passé, matériel, stores
+(avec les deux stores : ≈ 260 à 315 € la première année, et 18 à 34 passes pour couvrir, §10.5).
 
 ### 4.5 Résultat selon les ventes (après Stripe et cotisations, avant impôt sur le revenu)
 
@@ -302,6 +304,7 @@ mars 2027           Phase 1b bêta fermée gratuite du produit fini + mise en pl
 début avril 2027    LANCEMENT du produit fini (ouverture des ventes, saison des morilles)
 avril–mai 2027      Phase 2  première saison payante, puis passage sous 15 h/semaine
 juin–nov. 2027      Phase 3  saison principale
+15 juin 2027        décision sur les applis hybrides (§10.7, option A)
 2028+               Phase 4  un massif de plus par an
 ```
 
@@ -328,7 +331,7 @@ absorbe les fêtes de fin d'année et les imprévus.
 | 2 | **Habitat statique en tuiles + météo planifiée** par grille fixe | ~1 sem | Coût et charge ≈ constants ; condition des moins de 15 h/semaine |
 | 3 | Météo : **ingestion Météo-France** (0 €, 3–5 j). Repli : Open-Meteo Standard (29 $/mois, ~½ j) si l'ingestion déborde | ½–5 j | Doc 04 §5.2 |
 | 4 | Fonds de carte : **extrait Protomaps auto-hébergé** (hors-ligne autorisé, attribution OSM) | 1–2 j | Doc 04 §5.3 |
-| 5 | **PWA hors-ligne** par massif acheté | 1–2 sem | 🔥 Justifie le pass |
+| 5 | **PWA hors-ligne** par massif acheté ; stockage des paquets derrière une interface, pour réutiliser le code dans une coque Capacitor (§10.7) ; atténuations iOS (stockage persistant, état du paquet, repli GPX/KMZ) | 1–2 sem (+~1 j) | 🔥 Justifie le pass |
 | 6 | **Mode simple + onboarding mobile d'abord** (« où chercher cette semaine ») ; nom **Le Bon Versant** dans l'interface, à la place de « Forage Mapper » et « Myco Map » | 1–2 sem | 🔥 Conversion des novices |
 | 7 | Forêts publiques ONF + « marche estimée » + plafond de pente en mode novice ; **bonnes pratiques et règles de cueillette** ; avertissement « pas d'avis sur la comestibilité » | 3–4 j | Doc 04 §5.1, §5.5–5.6 |
 | 8 | Calendrier de pousse par espèce et pages de prospection par massif (sans identification) | 2–3 j | Contenu du pass et SEO |
@@ -353,6 +356,9 @@ absorbe les fêtes de fin d'année et les imprévus.
   lancement. Aucune remise « fondateur ». Le prix affiché est le prix de la saison.
 - Petite saison (morilles : 78 observations GBIF en Isère, 52 en Haute-Savoie). C'est un **test
   grandeur nature** à faible enjeu.
+- Mesurer, pour la décision sur les applis au 15/06/2027 (§10.7) : part d'iOS parmi les
+  acheteurs ; paquets hors-ligne disparus ; question « auriez-vous préféré une appli sur un
+  store ? ».
 - Mesurer : visites → secteur vitrine → pass ; remboursements ; usage hors-ligne ; ouverture des
   alertes.
 - **Sondage Van Westendorp** auprès des inscrits pour confirmer le prix d'automne.
@@ -380,8 +386,10 @@ absorbe les fêtes de fin d'année et les imprévus.
   Hautes-Pyrénées (doc 03 §3).
 - Précalcul annuel scripté (janvier–février).
 - Carte imprimée en vente pour la fin d'année.
-- Options à réévaluer **uniquement si les chiffres le justifient** : application sur les
-  stores (§7), offre pour accompagnateurs en montagne ou offices de tourisme, Suisse et Italie
+- **Applis hybrides Capacitor** (option A du §10.7) : si la décision du 15/06/2027 est
+  positive, elles sont construites pendant l'hiver 2027–2028 et sortent pour les morilles de
+  2028.
+- Options à réévaluer **uniquement si les chiffres le justifient** : offre pour accompagnateurs en montagne ou offices de tourisme, Suisse et Italie
   alpines.
 
 ### Ce que l'on ne fait pas, et pourquoi
@@ -394,7 +402,8 @@ absorbe les fêtes de fin d'année et les imprévus.
 | Migration OSM → BD TOPO | Option B écartée (option A retenue) ; à reconsidérer seulement si l'ODbL devient une gêne |
 | Publicité payante | Budget non précisé ; saisonnalité ; coût d'acquisition inconnu |
 | Communauté de partage de coins | Culture du secret (vandalisme en 2016) ; modération chronophage |
-| Applis natives dès le départ | Double maintenance ; la PWA suffit pour valider |
+| Applis natives (Swift, Kotlin), React Native ou Flutter | Réécriture de l'interface Vue ; seul Capacitor garde une base web unique (§10.1) |
+| Applis hybrides dès avril 2027 (option B) | Recommandation de l'étude, **sous réserve de l'arbitrage du porteur** (§8, point 4) : marge, calendrier, aucune preuve de marché encore (§10.7) |
 
 ## 6. Plan marketing allégé (`marketing-plan`, adapté à un solo sans budget)
 
@@ -412,12 +421,16 @@ non précisé.
 
 ## 7. Si l'on passe aux stores un jour (`aso`)
 
-*À ne considérer qu'après une saison réussie en PWA. Grille ASO appliquée en prévision ;
-aucune fiche n'existe encore.*
+*Calendrier : voir §10.7 (décision au 15/06/2027 dans l'option recommandée). Grille ASO
+appliquée en prévision ; aucune fiche n'existe encore.*
 
-- **Google Play** : publier la PWA via une *Trusted Web Activity*, à moindre coût.
-  **Apple** : un simple emballage web risque un refus au titre de la règle 4.2 (« fonctionnalité
-  minimale ») ; prévoir des fonctions natives (hors-ligne, géolocalisation).
+- **Emballage** : une **coque Capacitor commune** à iOS et Android (§10.1). Une *Trusted Web
+  Activity* suffirait pour Google Play, mais pas pour iOS, et le hors-ligne natif est justement
+  l'argument sur iOS. **Apple** : un simple emballage web risque un refus au titre de la règle
+  4.2 (« fonctionnalité minimale ») ; le hors-ligne par massif et la géolocalisation sont les
+  fonctions natives à mettre en avant.
+- **Achats** : dans l'appli, le pass passe par l'achat intégré du store, avec commission et
+  TVA prélevées à la source (§10.4–10.5).
 - **Titre (≤ 30 car.)** : marque + mot-clé, « Le Bon Versant : champignons » (28 car.).
   Sous-titre Apple (≤ 30) : « Prévision cèpes et girolles » (27 car.). Champ de mots-clés Apple
   (100 octets, sans répéter le titre) : `alpes,chartreuse,vercors,belledonne,savoie,morilles,cueillette,coins,pousse,randonnee`.
@@ -448,6 +461,13 @@ aucune fiche n'existe encore.*
 2. **Classes de dépôt INPI** pour « Le Bon Versant » (§9) : à confirmer lors de la recherche
    d'antériorité.
 3. **Moment du renommage du dépôt** `myco-map` (§9).
+4. **Appli mobile : quel calendrier ?** (§10.7). L'intuition du porteur est fondée pour iOS
+   (hors-ligne plus sûr en natif, usage normal des applis de terrain), mais une appli hybride
+   coûte un quart à un tiers de la marge par pass vendu dans l'appli, ~120 € de frais la
+   première année et 3 à 5 semaines de travail. **A** (recommandé) : PWA au lancement, code
+   hors-ligne portable, décision au 15/06/2027 sur les mesures, applis pour 2028. **B** : applis
+   dès avril 2027, en réduisant le périmètre de lancement ou en le décalant. **C** : applis
+   construites pendant la saison 2027, pour l'automne.
 
 ## 9. Nom de marque : « Le Bon Versant » (retenu)
 
@@ -511,3 +531,189 @@ positionnement montagne, se retient, n'emprunte rien aux concurrents, et laisse 
 mots-clés dans les titres (titre de store en 28 caractères : « Le Bon Versant : champignons »). Second choix : **La
 Bonne Pousse**, qui parle du timing, l'autre moitié de la promesse. **Le choix final revient au
 porteur** ; il a choisi **Le Bon Versant** le 14/10/2026.
+
+## 10. Application mobile : PWA d'abord, ou application hybride ?
+
+*Analyse demandée par le porteur le 14/10/2026. Son intuition : une vraie application mobile est
+un vrai plus, voire indispensable, pour deux raisons : (1) le **hors-ligne natif**, parce que
+le réseau manque souvent en montagne ; (2) les **usages**, parce que le public a l'habitude
+d'installer une appli depuis l'App Store ou le Play Store, pas une PWA. Il envisage une appli
+**hybride** pour garder une base web unique. Sources consultées le 14/10/2026 ; « non vérifié »
+quand aucune source fiable n'a été trouvée. Les efforts sont des **estimations de l'étude**,
+pas des chiffres sourcés.*
+
+### 10.1 Verdict sur l'intuition
+
+| Argument | Verdict | Pourquoi |
+|---|---|---|
+| **Hors-ligne fiable** | ✅ **Fondé sur iOS** ; ⚠️ **peu fondé sur Android** | Sur iOS, rien ne garantit qu'une PWA garde ses données : WebKit accorde le stockage persistant « selon des heuristiques » et ne dit nulle part que les applis web de l'écran d'accueil échappent à l'éviction. Une appli native range ses fichiers dans un dossier que le système ne purge pas (détail au §10.2). Sur Android, Chrome donne jusqu'à 60 % du disque par origine, et les données persistantes ne sont effacées que par l'utilisateur |
+| **Habitude des stores** | ⚠️ **Plausible, non mesurée** | Aucune étude indépendante ne donne de taux d'installation des PWA (seulement des chiffres de vendeurs). Les applis de terrain de référence sont natives : Komoot, Visorando, Cartes IGN, OsmAnd, Champi. Mais dans cette niche, l'acteur à la plus grosse audience, Chasseurs de champignons, est **web seulement**, comme Mycora et The Mycologist. Champi, natif et hors-ligne, n'affiche que « 500+ » installations Android (non vérifié) |
+| **Hybride = base web unique** | ✅ **Seulement avec Capacitor** | Le frontend est en Vue 3. Capacitor embarque l'appli web telle quelle (« peut être ajouté à tout projet JavaScript moderne », [capacitorjs.com](https://capacitorjs.com/docs), v8). React Native et Flutter imposent de **réécrire l'interface** (~3 200 lignes, doc 01) : ce n'est plus une base web unique |
+| **« Indispensable dès le lancement »** | ❌ **Non démontré**, et coûteux | Commissions et TVA prélevées par les stores (−26 à −35 % de net par pass vendu dans l'appli), ~120 € de frais la première année, 3 à 5 semaines de travail en plus dans une phase 1 sans marge (§10.5–10.6) |
+
+**En résumé** : l'intuition est juste sur le fond pour iOS. Le hors-ligne natif y est plus sûr,
+et c'est l'usage normal des applis de terrain. Elle n'est pas démontrée pour le lancement : la
+moitié Android (environ 64 % du trafic mobile en France) est bien servie par une PWA. Le
+prototype exporte déjà le GPX et le KMZ vers des applis natives (Iphigénie, OsmAnd, Locus),
+ce qui offre un repli hors-ligne. Surtout, un achat dans une appli iOS ou Android passe par les
+stores, ce qui coûte de la marge.
+
+### 10.2 PWA ou appli native : faits vérifiés
+
+| Critère | PWA (web installé) | Appli hybride Capacitor (stores) | Sources |
+|---|---|---|---|
+| **Installation** | Android : Chrome propose l'installation. iOS : **pas d'invite** ; il faut passer par Partager puis « Sur l'écran d'accueil ». Depuis iOS 26, tout site ajouté à l'écran d'accueil s'ouvre en mode appli par défaut | Recherche et installation dans le store, geste familier | [Chrome Developers](https://developer.chrome.google.cn/blog/pwa-install-features), [heise (iOS 26)](https://heise.de/-10749652) |
+| **Taux d'installation réel** | **Non disponible** : seuls des chiffres de vendeurs circulent (par exemple « ~85 % », auto-déclaré). Google rapporte des hausses relatives, pas de taux absolu | Taux de conversion des fiches store dans cette niche : **non disponible** (aucun outil ASO connecté) | [PWA Stats](https://www.pwastats.com/tags/home-screen), [add-to-homescreen](https://github.com/philfung/add-to-homescreen) |
+| **Quota de stockage** | Chrome : jusqu'à 60 % du disque par origine. Safari 17+ : jusqu'à ~60 % par origine dans le navigateur ; une appli de l'écran d'accueil a le même quota | Pas de quota web : fichiers de l'appli | [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria), [WebKit, 2023](https://webkit.org/blog/14403/updates-to-storage-policy/) |
+| **Éviction (le vrai risque)** | Stockage « au mieux » : effacé en bloc sous pression de stockage. Safari efface aussi les données écrites par script après **7 jours d'usage du navigateur sans interaction** avec le site. Pour les applis de l'écran d'accueil, Apple a seulement dit en 2020 qu'elles ont leur propre compteur ; aucune exemption n'est documentée. Le stockage persistant (`navigator.storage.persist()`) est accordé sur iOS selon des heuristiques, dont le fait d'être installé | Dossier *Application Support* : sauvegardé et **non purgé** par le système (seul *Caches* l'est) | [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria), [WebKit](https://webkit.org/blog/14403/updates-to-storage-policy/), [Apple WWDC 2017](https://developer.apple.com/videos/play/fall2017/204), [WebKit bug 237350](https://bugs.webkit.org/show_bug.cgi?id=237350) |
+| **Stabilité de la plateforme** | En 2024, Apple a retiré les applis web de l'écran d'accueil dans l'UE (bêta d'iOS 17.4), puis a fait marche arrière | Dépend des règles des stores (revue, commissions) | [Engadget](https://www.engadget.com/apple-backtracks-on-plans-to-get-rid-of-web-apps-on-iphones-in-the-eu-195232177.html) |
+| **Notifications** | Web Push sur iOS 16.4 et plus, **seulement pour les applis de l'écran d'accueil**, avec une permission demandée après un geste de l'utilisateur | Notifications natives | [WebKit](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/) |
+| **Performance** | Leaflet dans le navigateur | Même moteur web, dans une WebView | **Non mesuré** ; pas d'écart déterminant attendu pour une carte Leaflet |
+| **Paiement** | **Stripe**, aucune commission de plateforme, franchise de TVA | **Achat intégré obligatoire** pour débloquer du contenu (Apple 3.1.1). Une appli qui donne accès à des achats faits sur le web doit **aussi** les proposer en achat intégré (3.1.3(b)). L'exception « compagnon gratuit » (3.1.3(f)) vise des exemples comme la VoIP ou le stockage en ligne, et des développeurs SaaS rapportent des refus | [App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/), [forum Apple 811018](https://developer.apple.com/forums/thread/811018) |
+| **Mises à jour** | Immédiates, sans revue | Revue Apple à chaque version ; cible Android à relever chaque année (API 36 exigée au 31/08/2026 pour les nouvelles applis et mises à jour) | [Google Play, cible d'API](https://developer.android.com/google/play/requirements/target-sdk) |
+| **Visibilité** | SEO : le canal déjà prévu (§6) | ASO : volumes de recherche **non disponibles** | — |
+
+**Parts de marché** : en France, Android pèse **~64 %** du trafic web mobile et iOS **~36 %**
+(StatCounter, août 2026 ; c'est une mesure de trafic, pas de parc,
+[gs.statcounter.com](https://gs.statcounter.com/os-market-share/mobile/france/)). Le point
+faible de la PWA concerne donc environ un tiers des utilisateurs.
+
+### 10.3 Le hors-ligne chez les applis de terrain
+
+| Appli | Plateforme | Hors-ligne | Prix | Source |
+|---|---|---|---|---|
+| **Komoot** | iOS, Android | Cartes **par région**, téléchargées dans l'appli seulement, en Wi-Fi conseillé ; itinéraires téléchargeables un par un | Régions à l'unité, ou monde entier avec Premium (prix non relevés) | [aide Komoot](https://support.komoot.com/hc/articles/10356476920986) |
+| **Visorando** | iOS, Android, web | Cartes topographiques IGN 1:25 000 et satellite **accessibles hors ligne sur mobile**, avec Premium ; itinéraire téléchargé avant de partir | **6 €/mois ou 25 €/an** ; essai de 3 jours | [visorando.com/premium](https://visorando.com/premium.html) |
+| **Cartes IGN** (appli officielle de l'IGN, lancée en mai 2024) | iOS, Android, **pas de version ordinateur** | Téléchargement de cartes pour un usage hors connexion, **sauf certains fonds soumis à des droits** | Gratuit | [dossier de presse IGN](https://www.ign.fr/files/default/2024-05/DP-APPLI-CARTES-IGN-MAI-2024.pdf), [Presse-citron](https://www.presse-citron.net/telecharger/geographie-et-voyage/cartographie-geolocalisation/cartes-ign.html) |
+| **OsmAnd** | iOS, Android | **Cartes vectorielles par pays ou région**. Version gratuite : 7 téléchargements sur Android (5 sur iOS), mises à jour comprises. Rhône-Alpes : ~860 Mo (forum non daté, **non vérifié**) | Payant pour l'illimité | [docs OsmAnd](https://docs.osmand.net/docs/user/purchases/android), [forum Suunto](https://forum.suunto.com/topic/11208/size-of-maps) |
+| **Champi** | iOS, Android | **Zones téléchargées** | 9,99 €/mois ; 149,99 € pour 5 ans par région (doc 02 §2.2) | Doc 02 |
+| **Iphigénie** | iOS | Fonds IGN hors-ligne | 24,99 €/an | Doc 02 |
+| Mycora, The Mycologist, Chasseurs de champignons | **Web seulement** | Non observé | Doc 02 | Doc 02 ; [chasseursdechampignons.com](https://www.chasseursdechampignons.com/) |
+
+« **Champignons Net** » et « **IGN La Clé des champs** » : **aucune appli trouvée sous ces
+noms**. L'appli officielle de l'IGN s'appelle **Cartes IGN** ; l'ONF publie **Clés de forêt**,
+une appli naturaliste. Si le porteur pensait à une autre appli, il faut son nom exact sur le
+store.
+
+**Ce qu'il faut en retenir** :
+
+1. Le modèle du secteur, ce sont des **paquets par région ou par massif**, téléchargés
+   volontairement avant la sortie. C'est exactement le « massif acheté » prévu (doc 04 §3.4).
+2. Les fonds de carte publics **ne se pré-téléchargent pas librement** : la politique des tuiles
+   OSM interdit le téléchargement en masse et renvoie vers l'auto-hébergement
+   ([OSMF](https://operations.osmfoundation.org/policies/tiles/),
+   [tuiles vectorielles](https://operations.osmfoundation.org/policies/vector/)). Pour la
+   Géoplateforme IGN, les conditions du hors-ligne restent **non vérifiées** : la page d'aide ne
+   donne que la licence Etalab du site
+   ([cartes.gouv.fr](https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/diffusion/)).
+   L'**extrait Protomaps auto-hébergé** (PMTiles), déjà retenu (§4.2), vaut donc **pour la
+   PWA comme pour l'appli**. Ce travail est commun aux deux voies.
+3. **Taille du paquet** : à mesurer. L'hypothèse du §4.1 (100 à 200 Mo par massif) reste dans
+   l'ordre de grandeur des cartes régionales d'OsmAnd. Aucune des deux voies n'est bloquée par
+   la taille.
+
+### 10.4 Coûts fixes et contraintes de publication
+
+| Poste | Montant ou règle | Source |
+|---|---|---|
+| Apple Developer Program | **99 $/an** ; **99 €** selon des sources françaises (prix 2026 en euros **non vérifié** sur la page d'Apple). Pas d'exonération pour un particulier ou une entreprise individuelle | [iPhonesoft](https://iphonesoft.fr/2021/04/09/app-apple-developer-payer-compte-developpeur-france), [AppleInsider](https://appleinsider.com/articles/20/02/03/apple-extends-developer-program-fee-waivers-to-8-countries) |
+| Google Play Console | **25 $ une fois** | [aide Google Play](https://support.google.com/googleplay/android-developer/answer/113468) |
+| Commission Apple (UE, depuis le 01/10/2026) | Achat intégré : **15 %** pour le Small Business Program, 26 % sinon. Paiement alternatif ou lien vers le site : **10 %** pour le Small Business Program (20 % ou 15 % sinon) | [Apple Newsroom, 08/2026](https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/) |
+| Commission Google (EEE, depuis le 30/06/2026) | **10 %** sur le premier million de dollars, **+ 5 % de frais de facturation** avec Google Play Billing ; pas de frais de facturation pour les liens web externes. La grille officielle est mal lisible : **à confirmer dans la console** | [aide Google Play](https://support.google.com/googleplay/android-developer/answer/112622?hl=en), [PocketGamer.biz](https://www.pocketgamer.biz/google-play-expands-billing-options-and-lowers-fees-for-developers/) |
+| TVA | Apple et Google sont **vendeurs réputés** : ils collectent la TVA (20 % en France) et calculent la commission **sur le prix hors TVA**. La franchise de TVA de la micro-entreprise **ne protège plus** le prix public | [RevenueCat](https://www.revenuecat.com/docs/taxes-and-commissions), [Appfigures](https://appfigures.com/support/kb/616/how-vat-is-handled-by-apple-and-google-play) |
+| Compte Google personnel | Créé après le 13/11/2023 : **test fermé avec 12 testeurs pendant 14 jours** avant toute mise en production | [aide Google Play](https://support.google.com/googleplay/android-developer/answer/14151465?hl=en-GB) |
+| Statut de commerçant (DSA) | Toute appli payante dans l'UE affiche les coordonnées du vendeur. Pour un particulier : **adresse (ou boîte postale)**, téléphone et e-mail, **publics** sur la fiche. Une domiciliation est à prévoir | [9to5Mac](https://9to5mac.com/2024/10/17/developers-address-phone-number-eu-app-store) |
+| Remboursements | Sur iOS, le remboursement d'un achat intégré se demande **à Apple**. La garantie « remboursé sous 14 jours » (§3.2) ne dépend alors plus du porteur | Règles Apple ; **détail à vérifier** |
+| Revue Apple | Une interface qui ne fait qu'emballer un site risque un refus (règle 4.2). Le hors-ligne par massif et la géolocalisation sont des arguments | [App Review Guidelines 4.2](https://developer.apple.com/app-store/review/guidelines/) |
+
+### 10.5 Économie unitaire : un pass à 19 € selon le canal
+
+*Hypothèses : prix public de 19 € TTC partout ; cotisations ~21,4 % (§3.4) ; commissions
+Small Business Program. L'**assiette des cotisations** pour une vente via un store
+(reversement net ou prix public) est **à valider** avec l'URSSAF ou un comptable, d'où une
+fourchette.*
+
+| Canal | Calcul | **Net avant impôt** | Écart avec le web |
+|---|---|---|---|
+| **Web (Stripe)**, franchise de TVA | 19 − 0,54 (Stripe) − 4,07 (cotisations) | **≈ 14,40 €** | — |
+| **Achat intégré Apple** (UE, 15 %) | 19 ÷ 1,20 = 15,83 HT ; −15 % → 13,46 € reversés ; − cotisations (2,88 à 4,07) | **≈ 9,40 à 10,60 €** | **−26 à −35 %** |
+| **Google Play Billing** (10 % + 5 %) | Même calcul | **≈ 9,40 à 10,60 €** | **−26 à −35 %** |
+| Lien depuis l'appli iOS vers le site (UE, 10 %) | 19 − 0,54 − 1,90 (base de la commission **non vérifiée**) − 4,07 | **≈ 12,50 €** | −13 % ; demande une autorisation d'Apple et des déclarations |
+
+**Coûts fixes avec les deux stores** : scénario minimal (140 à 190 €) + Apple (99 €) + Google
+(25 $, environ 21 à 24 €) ≈ **260 à 315 € la première année**, puis ≈ 240 à 290 €/an.
+**Seuil de couverture** : **18 à 22 passes** si tout est vendu sur le web ; **25 à 34 passes**
+si tout est vendu dans les applis. C'est **environ le double** du seuil actuel (10 à 14
+passes, §4.4), et plus que le critère d'arrêt de la phase 2 (15 passes au 31/05/2027).
+
+### 10.6 Charge de travail pour un développeur seul
+
+| Lot | PWA seule | En plus pour Capacitor (iOS + Android) |
+|---|---|---|
+| Paquet hors-ligne par massif (fond Protomaps + tuiles d'habitat + projection J+14 figée) | 1–2 sem (déjà dans la phase 1, ordre 5) | Réutilisé |
+| Coque Capacitor, stockage natif des paquets, permissions de géolocalisation | — | 3–5 j |
+| Achats intégrés Apple et Google, validation côté serveur, restauration, lien entre le compte web et le compte appli | — | 1–2 sem |
+| Fiches des stores, captures, déclarations de confidentialité, statut de commerçant | — | 2–3 j |
+| Test fermé Google (12 testeurs × 14 jours) | — | Calendaire ; peut se caler sur la bêta de mars (phase 1b) |
+| **Total au lancement** | Prévu | **+3 à 5 semaines de travail** |
+| **Entretien annuel** | Mises à jour web | +2 à 5 j/an (cible Android, SDK iOS, versions majeures de Capacitor) + revue Apple à chaque version + support des achats dans les stores |
+
+**Le point de calendrier** : la phase 1 compte déjà 6 à 9 semaines de travail sur ~15 semaines
+calendaires. Avec 3 à 5 semaines de plus, on arrive à 9 à 14 semaines : **la marge disparaît**
+et le lancement d'avril est menacé. Après le lancement, le porteur passe sous 15 h/semaine, dont
+5 à 10 h de fonctionnement en saison (§4.6). Les mêmes 3 à 5 semaines prendraient alors **2 à
+4 mois de calendrier**. Reporter l'appli n'est donc pas gratuit. La période creuse de l'hiver
+2027–2028 est le meilleur créneau pour la construire, avec une sortie pour les morilles de 2028.
+
+### 10.7 Trois options
+
+| | **A. PWA au lancement, décision sur données (recommandé)** | **B. Applis hybrides dès avril 2027** | **C. Applis hybrides pour l'automne 2027** |
+|---|---|---|---|
+| Lancement d'avril 2027 | Web + PWA, Stripe | Web + PWA + iOS + Android | Web + PWA |
+| Applis | Décision au **15/06/2027** ; construites pendant l'hiver 2027–2028 ; sorties pour les morilles de 2028 | Dès le lancement | Construites de mai à août 2027, pendant la saison |
+| Phase 1 | Inchangée, plus ~1 j pour rendre le hors-ligne **portable** (stockage derrière une interface, pour réutiliser le code dans Capacitor) | +3 à 5 sem : il faut **réduire le périmètre** (garder l'emprise actuelle au lieu des Alpes du Nord, ordre 9 ; reporter les pages calendrier, ordre 8) **ou décaler** le lancement | Inchangée |
+| Hors-ligne iOS au lancement | Au mieux (stockage persistant demandé, état du paquet affiché, repli GPX/KMZ) | Fiable | Au mieux, puis fiable à l'automne |
+| Marge par pass | 14,40 € | 9,40 à 14,40 € selon le canal | Idem que B à partir de l'automne |
+| Seuil de couverture | 10 à 14 passes | 18 à 34 passes | 18 à 34 passes à partir de l'automne |
+| Risque principal | Perdre des acheteurs iOS qui exigent une appli | Lancement retardé ou amputé ; double maintenance avant toute preuve de marché | Charge de travail en pleine saison, au-delà de 15 h/semaine |
+
+**Recommandation : option A.**
+
+1. La PWA couvre bien Android (~64 % du trafic).
+2. Le repli GPX/KMZ vers des applis natives existe déjà.
+3. Les stores coûtent un quart à un tiers de la marge, et doublent le seuil de couverture.
+4. La phase 1 n'a pas de marge.
+5. L'argument des « usages » n'est pas mesuré ; la saison des morilles 2027 le mesurera.
+
+On accepte de prendre l'intuition du porteur au sérieux. Le code hors-ligne est donc rendu
+portable dès la phase 1, et les applis ne sont qu'une coque à ajouter.
+
+**Atténuations iOS au lancement (option A)** :
+
+- appeler `navigator.storage.persist()` après l'installation ;
+- afficher l'état du paquet à chaque ouverture (« Chartreuse disponible hors réseau, mis à jour
+  le … ») et prévenir quand un paquet attendu a disparu ;
+- rappel « vérifiez votre massif avant de partir » dans le bulletin ;
+- export GPX/KMZ mis en avant comme filet de sécurité ;
+- guide d'installation iOS en deux écrans.
+
+**Mesures en phase 2, pour décider au 15/06/2027** :
+
+- part d'iOS parmi les acheteurs ;
+- paquets disparus (éviction détectée au lancement de la PWA, signal anonyme) ;
+- demandes au support liées au hors-ligne ;
+- question à l'achat et dans le sondage Van Westendorp : « auriez-vous préféré une appli sur
+  l'App Store ou le Play Store ? ».
+
+**Règle de décision proposée** : construire les applis si le critère de la phase 2 est atteint
+(au moins 15 passes) **et** si au moins un des signaux suivants apparaît :
+
+- des paquets disparus chez au moins 5 % des utilisateurs iOS actifs ;
+- au moins 20 % des répondants qui demandent une appli ;
+- des plaintes récurrentes sur le hors-ligne.
+
+Ces seuils sont des propositions, à ajuster par le porteur.
+
+**Arbitrage à faire par le porteur** : c'est un vrai choix stratégique. Il oppose la fiabilité
+du hors-ligne sur iOS et la présence dans les stores, d'un côté, à la marge, au calendrier de
+lancement et à la charge de maintenance, de l'autre. La question est posée au §8 (point 4).

@@ -23,6 +23,8 @@
 - **Code** : **propriétaire** (pas d'open source) ; ODbL : **option A** (publier les couches
   dérivées d'OSM).
 - **Nom** : **« Le Bon Versant »** retenu (« Myco Map » écarté). Suites pratiques plus bas.
+- **Appli mobile** : le porteur la juge « un vrai plus, voire indispensable ». Analyse
+  ci-dessous ; **calendrier à arbitrer**.
 
 ## Les 10 constats clés
 
@@ -95,22 +97,52 @@ remise « fondateur ».
 4. **Renommer le dépôt git `myco-map` plus tard**, par exemple `le-bon-versant`, au moment choisi
    par le porteur. Non fait.
 
+**Application mobile** (détail en [05 §10](05-roadmap-monetisation.md), critique en
+[04 §3.6](04-critique-projet.md)) :
+
+- **L'intuition du porteur est fondée pour iOS.** Une PWA peut y perdre ses paquets hors-ligne :
+  aucune exemption d'éviction n'est documentée pour les applis de l'écran d'accueil. Une appli
+  native les garde. Komoot, Visorando, Cartes IGN, OsmAnd et Champi sont toutes natives, avec
+  des cartes par région.
+- **Elle est peu fondée pour Android** (~64 % du trafic mobile en France), où la PWA dispose de
+  60 % du disque et du stockage persistant.
+- **L'argument des « usages » n'est pas mesuré.** Aucun taux d'installation indépendant des PWA
+  n'existe, et les acteurs web seulement (Chasseurs de champignons, Mycora) ont l'audience la
+  plus visible de la niche.
+- **Le coût est réel.** Dans l'appli, le pass passe par l'achat intégré : TVA collectée par le
+  store et 15 % de commission. Le net passe de ≈ 14,40 € à ≈ 9,40–10,60 € (−26 à −35 %). Il
+  faut ajouter Apple (99 $/an) et Google (25 $ une fois), et le seuil de couverture double
+  (18 à 34 passes). Il faut aussi 3 à 5 semaines de travail en plus, alors que la phase 1 n'a
+  pas de marge.
+- **Hybride = Capacitor** : c'est la seule voie qui garde l'interface Vue ; React Native et
+  Flutter imposent une réécriture.
+- **Recommandation (option A)** : PWA au lancement d'avril 2027, avec un code hors-ligne
+  **portable vers Capacitor** dès la phase 1 et des atténuations iOS (stockage persistant, état
+  du paquet affiché, repli GPX/KMZ). On mesure pendant la saison des morilles et on **décide au
+  15/06/2027**. Si c'est oui, les applis sont construites pendant l'hiver 2027–2028 et sortent
+  pour les morilles de 2028. Options B (applis dès avril 2027) et C (applis pour l'automne
+  2027) : voir les questions ouvertes.
+
 **Roadmap** :
 
 | Phase | Période | Contenu | Critère |
 |---|---|---|---|
 | 0 | Maintenant → mi-nov. 2026 | Dépôt de code privé + licence propriétaire, domaines Le Bon Versant, antériorité INPI, validation GBIF, 10 entretiens, page d'attente sans paiement | Écart avec le hasard ≥ ~1,5, sinon re-calibrage |
-| 1 | Mi-nov. 2026 → fév. 2027 | Produit fini : production en scénario minimal, tuiles statiques + météo planifiée, Météo-France, Protomaps, PWA hors-ligne, mode simple, bonnes pratiques et forêts publiques, conformité ODbL (A), Stripe, Alpes du Nord | 6 à 9 semaines de travail sur ~15 semaines calendaires |
+| 1 | Mi-nov. 2026 → fév. 2027 | Produit fini : production en scénario minimal, tuiles statiques + météo planifiée, Météo-France, Protomaps, PWA hors-ligne (code portable vers Capacitor), mode simple, bonnes pratiques et forêts publiques, conformité ODbL (A), Stripe, Alpes du Nord | 6 à 9 semaines de travail sur ~15 semaines calendaires |
 | 1b | Mars 2027 | Bêta fermée gratuite du produit fini ; création de la micro-entreprise, médiateur, CGU/CGV, INPI | La moitié des testeurs paierait au prix annoncé |
-| 2 | Avr.–mai 2027 | **Lancement**, saison des morilles ; passage sous 15 h/semaine | ≥ 15 passes au 31/05/2027, sinon revoir l'offre |
+| 2 | Avr.–mai 2027 | **Lancement**, saison des morilles ; passage sous 15 h/semaine ; mesures pour la décision sur les applis (part d'iOS, paquets disparus, demande d'appli) | ≥ 15 passes au 31/05/2027, sinon revoir l'offre ; décision sur les applis au 15/06/2027 |
 | 3 | Juin–nov. 2027 | Bulletin automatique, SEO par massif, expositions | ≥ 50 passes au 30/11/2027 ; < 20 → arrêter ou repositionner |
-| 4 | 2028+ | +1 massif par an (Jura / Doubs, puis Pyrénées), carte imprimée | — |
+| 4 | 2028+ | +1 massif par an (Jura / Doubs, puis Pyrénées), carte imprimée ; applis Capacitor pour les morilles de 2028 si la décision est positive | — |
 
 ## Questions encore ouvertes
 
 1. **Budget de relecture juridique** (CGU/CGV, lecture de l'ODbL) : non chiffré.
 2. **Classes de dépôt INPI** pour « Le Bon Versant », à confirmer à la recherche d'antériorité.
 3. **Moment du renommage** du dépôt `myco-map`.
+4. **Appli mobile : quel calendrier ?** A (recommandé) : PWA au lancement, décision au
+   15/06/2027 sur données, applis pour 2028. B : applis hybrides dès avril 2027, en réduisant le
+   périmètre de lancement (emprise actuelle plutôt que les Alpes du Nord) ou en le décalant.
+   C : applis construites pendant la saison 2027, pour l'automne. → [05 §10.7](05-roadmap-monetisation.md)
 
 ## Incertitudes principales
 
@@ -128,6 +160,10 @@ remise « fondateur ».
 - **Licences** à confirmer : LIDAR HD (fiche produit), EcoDataCube, Charm-50 (source officielle),
   données ouvertes Météo-France, conditions hors-ligne des fonds IGN.
 - **Efficacité du modèle** : inconnue tant que la validation de la phase 0 n'est pas faite.
+- **Appli mobile** : taux d'installation des PWA et conversion des fiches store **non
+  disponibles** ; prix d'Apple en euros non vérifié chez Apple ; grille Google Play 2026 à
+  confirmer dans la console ; assiette des cotisations pour une vente via un store à valider ;
+  « Champignons Net » et « IGN La Clé des champs » introuvables sous ces noms.
 - **Marque « Le Bon Versant »** : aucune recherche INPI ou EUIPO n'a pu être faite ; seuls les
   domaines ont été vérifiés (registres RDAP, 14/10/2026).
 
@@ -185,6 +221,17 @@ remise « fondateur ».
 - Médiation de la consommation : <https://www.portail-autoentrepreneur.fr/academie/creation-auto-entreprise/mediation-consommation>
 - Dépôt INPI : <https://www.captaincontrat.com/articles-creation-entreprise/cout-depot-marque-inpi>
 - Registres de domaines (RDAP) : <https://rdap.nic.fr/>, <https://rdap.verisign.com/com/v1/>
+
+**Application mobile (relevés du 14/10/2026)**
+- Règles Apple (3.1.1, 3.1.3, 4.2) : <https://developer.apple.com/app-store/review/guidelines/>
+- Commissions Apple dans l'UE (01/10/2026) : <https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/>
+- Commissions Google Play : <https://support.google.com/googleplay/android-developer/answer/112622?hl=en> ; inscription : <https://support.google.com/googleplay/android-developer/answer/113468> ; test fermé : <https://support.google.com/googleplay/android-developer/answer/14151465?hl=en-GB>
+- Stockage web et éviction : <https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria>, <https://webkit.org/blog/14403/updates-to-storage-policy/>
+- Web Push sur iOS : <https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/> ; iOS 26 : <https://heise.de/-10749652>
+- Parts de marché mobile en France : <https://gs.statcounter.com/os-market-share/mobile/france/>
+- Hors-ligne des applis de terrain : <https://support.komoot.com/hc/articles/10356476920986>, <https://visorando.com/premium.html>, <https://www.ign.fr/files/default/2024-05/DP-APPLI-CARTES-IGN-MAI-2024.pdf>, <https://docs.osmand.net/docs/user/purchases/android>
+- TVA et commissions des stores : <https://www.revenuecat.com/docs/taxes-and-commissions>, <https://appfigures.com/support/kb/616/how-vat-is-handled-by-apple-and-google-play>
+- Capacitor : <https://capacitorjs.com/docs>
 
 **Licences et conformité**
 - ODbL 1.0 : <https://opendatacommons.org/licenses/odbl/1-0/>
