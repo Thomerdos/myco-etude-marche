@@ -6,6 +6,7 @@ title: "Journal des modifications"
 
 Historique des révisions de l'étude et du site, du plus récent au plus ancien. Dates et heures exactes issues de l'historique du dépôt.
 
+- **14/10/2026 à 13:25** — Correction de l'alignement de la première colonne des tableaux (grille du thème Cayman neutralisée), validée sur screenshots Chrome headless en 1440 px et 390 px.
 - **14/10/2026 à 13:16** — Refonte légère des tableaux validée avec impeccable : grille éditoriale (bord gauche commun, conteneur 80 rem), filets horizontaux, en-têtes en petites capitales, chiffres tabulaires ; suppression du débord centré.
 - **14/10/2026 à 13:09** — Tableaux élargis sur grands écrans : largeur dédiée (jusqu'à 84 rem) hors de la colonne de texte, pour les tableaux des documents 02 et 05.
 - **14/10/2026 à 12:51** — Heure de dernière mise à jour (JJ/MM/AAAA à HH:MM) et création de ce journal des modifications.

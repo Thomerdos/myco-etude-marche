@@ -1,0 +1,8 @@
+.main-content table th,.main-content table td{padding:.6rem .9rem;vertical-align:top;min-width:7rem;border:0;border-bottom:1px solid #e3ecec}
+.main-content table th{background:transparent;color:#0f4c4c;text-align:left;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;vertical-align:bottom;border-bottom:2px solid #157878}
+.main-content table th:first-child,.main-content table td:first-child{padding-left:0}
+.main-content table td:first-child{font-weight:600;color:#1f2a2d}
+.main-content table th:last-child,.main-content table td:last-child{padding-right:0}
+.main-content table tbody tr:nth-child(even){background:transparent}
+@media (max-width:42em){.main-content table th,.main-content table td{min-width:6rem;padding:.4rem .5rem}.main-content table th:first-child,.main-content table td:first-child{padding-left:0}.main-content table th:last-child,.main-content table td:last-child{padding-right:0}.main-content table th{font-size:.72rem}}
+@media (min-width:64em){.main-content table th,.main-content table td{min-width:8rem}}
