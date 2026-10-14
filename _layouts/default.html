@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'fr' }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Aller au contenu</a>
+
+    {% assign is_home = false %}
+    {% if page.path == "index.md" %}{% assign is_home = true %}{% endif %}
+
+    <header class="page-header" role="banner">
+      {% if is_home %}
+        <h1 class="project-name">{{ site.title }}</h1>
+        <p class="project-tagline">{{ site.description }}</p>
+      {% else %}
+        <a class="project-home" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      {% endif %}
+    </header>
+
+    <nav class="doc-nav" aria-label="Documents de l'étude">
+      <a href="{{ '/' | relative_url }}"{% if is_home %} aria-current="page"{% endif %}>Sommaire</a>
+      {% for doc in site.data.docs %}
+        <a href="{{ doc.path | replace: '.md', '.html' | prepend: '/' | relative_url }}"{% if page.path == doc.path %} aria-current="page"{% endif %}>{{ doc.label }}</a>
+      {% endfor %}
+    </nav>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      {% assign idx = -1 %}
+      {% for doc in site.data.docs %}{% if page.path == doc.path %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+      {% if idx >= 0 %}
+        {% assign prev_idx = idx | minus: 1 %}
+        {% assign next_idx = idx | plus: 1 %}
+        <nav class="pager" aria-label="Document précédent ou suivant">
+          {% if prev_idx >= 0 %}{% assign d = site.data.docs[prev_idx] %}<a class="pager-prev" href="{{ d.path | replace: '.md', '.html' | prepend: '/' | relative_url }}" rel="prev"><span>Précédent</span>{{ d.label }}</a>{% else %}<span></span>{% endif %}
+          {% if next_idx < site.data.docs.size %}{% assign d = site.data.docs[next_idx] %}<a class="pager-next" href="{{ d.path | replace: '.md', '.html' | prepend: '/' | relative_url }}" rel="next"><span>Suivant</span>{{ d.label }}</a>{% endif %}
+        </nav>
+      {% endif %}
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">Page générée par <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

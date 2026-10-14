@@ -1,0 +1,12 @@
+- path: 00-synthese-executive.md
+  label: "00 Synthèse"
+- path: 01-audit-projet.md
+  label: "01 Audit"
+- path: 02-benchmark-concurrentiel.md
+  label: "02 Benchmark"
+- path: 03-etude-marche.md
+  label: "03 Marché"
+- path: 04-critique-projet.md
+  label: "04 Critique"
+- path: 05-roadmap-monetisation.md
+  label: "05 Roadmap"
