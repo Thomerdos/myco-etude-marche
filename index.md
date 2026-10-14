@@ -1,3 +1,5 @@
+<p class="study-dates">Étude publiée le 14/10/2026 — dernière mise à jour le {% if page.last_modified_at %}{{ page.last_modified_at | date: "%d/%m/%Y" }}{% else %}{{ site.time | date: "%d/%m/%Y" }}{% endif %}</p>
+
 # Étude de marché — carte de prospection mycologique
 
 *Étude publiée librement — établie le 14 octobre 2026.*
