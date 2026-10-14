@@ -54,7 +54,7 @@ body { color: #2f3a3e; line-height: 1.6; }
   // plus spécifique qu'un `th` seul. Sinon la grille du thème subsiste et le texte de la
   // 1re colonne (padding-left: 0) vient coller le filet vertical de gauche.
   table th, table td { padding: 0.6rem 0.9rem; vertical-align: top; min-width: 7rem; border: 0; border-bottom: 1px solid #e3ecec; }
-  table th { background: transparent; color: $teal-deep; text-align: left; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; vertical-align: bottom; border-bottom: 2px solid $teal; }
+  table th { background: transparent; color: $teal-deep; text-align: left; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; vertical-align: top; border-bottom: 2px solid $teal; }
   table th:first-child, table td:first-child { padding-left: 0; }
   table td:first-child { font-weight: 600; color: #1f2a2d; }
   table th:last-child, table td:last-child { padding-right: 0; }
