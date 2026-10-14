@@ -1,4 +1,7 @@
-<p class="study-dates">Étude publiée le 14/10/2026 — dernière mise à jour le {% if page.last_modified_at %}{{ page.last_modified_at | date: "%d/%m/%Y" }}{% else %}{{ site.time | date: "%d/%m/%Y" }}{% endif %}</p>
+---
+layout: default
+---
+<p class="study-dates">Étude publiée le 14/10/2026 — dernière mise à jour le {% if page.last_modified_at %}{{ page.last_modified_at | date: "%d/%m/%Y à %H:%M" }}{% else %}{{ site.time | date: "%d/%m/%Y à %H:%M" }}{% endif %}</p>
 
 # Étude de marché — carte de prospection mycologique
 
@@ -14,3 +17,4 @@
 - [03 — Étude de marché](03-etude-marche.md)
 - [04 — Critique du projet](04-critique-projet.md)
 - [05 — Roadmap & monétisation](05-roadmap-monetisation.md)
+- [Journal des modifications](journal-des-modifications.html)

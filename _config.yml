@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
+timezone: Europe/Paris
 plugins:
   - jekyll-last-modified-at
 lang: fr
