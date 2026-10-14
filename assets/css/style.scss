@@ -41,6 +41,13 @@ body { color: #2f3a3e; line-height: 1.6; }
   th { background: #f3f7f7; text-align: left; }
   tbody tr:nth-child(even) { background: #fafcfc; }
   @media (max-width: 42em) { table { font-size: 0.85rem; } th, td { min-width: 6rem; padding: 0.4rem 0.5rem; } }
+
+  // Desktop : les tableaux sortent de la colonne de texte (42 rem) et se centrent
+  // dans la zone disponible (84 rem max) ; le texte courant garde sa largeur.
+  @media (min-width: 64em) {
+    table { width: min(84rem, 100vw - 4rem); position: relative; left: 50%; transform: translateX(-50%); font-size: 0.95rem; line-height: 1.55; }
+    th, td { min-width: 8rem; padding: 0.6rem 0.9rem; }
+  }
 }
 
 .pager {
