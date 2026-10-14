@@ -2,13 +2,23 @@
 ---
 @import "{{ site.theme }}";
 
+// Grille : un conteneur large (80 rem) ; le texte courant reste à 42 rem, aligné à gauche,
+// et les tableaux partent du même bord gauche que le texte et les filets de titres.
+$wide: 80rem;
+$teal: #157878;
+$teal-deep: #0f4c4c;
+$line: #d5e1e1;
+
 // Lisibilité : corps plus sombre, interligne aéré, colonne de texte ~70 caractères.
 body { color: #2f3a3e; line-height: 1.6; }
 
-.page-header { padding: 1.25rem 1rem; text-align: left; }
-.page-header .project-name { margin: 0 auto; max-width: 60rem; font-size: 1.9rem; }
-.page-header .project-tagline { margin: 0.5rem auto 0; max-width: 60rem; font-size: 1.05rem; opacity: 0.9; }
-.project-home { display: block; max-width: 60rem; margin: 0 auto; color: #fff; font-weight: 700; }
+.page-header { padding: 1.25rem 1rem; text-align: left; background-color: $teal-deep; background-image: linear-gradient(120deg, $teal-deep, $teal); }
+.page-header .project-name { margin: 0 auto; max-width: $wide; font-size: 1.9rem; }
+.page-header .project-tagline { margin: 0.5rem auto 0; max-width: $wide; font-size: 1.05rem; opacity: 0.9; }
+.project-home { display: block; max-width: $wide; margin: 0 auto; color: #fff; font-weight: 700; }
+@media (min-width: 64em) {
+  .page-header { padding-left: 3rem; padding-right: 3rem; }
+}
 
 .doc-nav {
   display: flex; gap: 0.25rem; overflow-x: auto; padding: 0.5rem 1rem;
@@ -21,38 +31,46 @@ body { color: #2f3a3e; line-height: 1.6; }
 }
 
 .main-content {
-  max-width: 60rem; font-size: 1.05rem;
-  @media (min-width: 64em) { padding: 2rem 3rem; }
+  max-width: $wide; font-size: 1.05rem;
+  @media (min-width: 64em) { padding: 2.5rem 3rem; }
   @media (max-width: 42em) { font-size: 1rem; }
 
   p, ul, ol, blockquote { max-width: 42rem; }
+  p, li { text-wrap: pretty; }
   li { margin-bottom: 0.3rem; }
   a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
 
-  h1 { font-size: 2rem; line-height: 1.2; font-weight: 700; margin-top: 0.5rem; }
-  h2 { font-size: 1.5rem; line-height: 1.3; font-weight: 700; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #dce6e6; }
-  h3 { font-size: 1.2rem; line-height: 1.35; font-weight: 700; margin-top: 2rem; }
+  h1 { font-size: 2.1rem; line-height: 1.2; font-weight: 700; margin-top: 0.5rem; text-wrap: balance; }
+  h2 { font-size: 1.5rem; line-height: 1.3; font-weight: 700; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid $line; text-wrap: balance; }
+  h3 { font-size: 1.2rem; line-height: 1.35; font-weight: 700; margin-top: 2.25rem; text-wrap: balance; }
   h4 { font-size: 1.05rem; font-weight: 700; }
-  h1, h2, h3, h4 { color: #0f5c5c; scroll-margin-top: 4rem; }
+  h1, h2, h3, h4 { color: $teal-deep; scroll-margin-top: 4rem; }
   blockquote { color: #4a565a; }
 
-  table { font-size: 0.92rem; line-height: 1.45; word-break: normal; margin-bottom: 1.5rem; }
-  th, td { padding: 0.5rem 0.75rem; vertical-align: top; min-width: 7rem; }
-  th { background: #f3f7f7; text-align: left; }
-  tbody tr:nth-child(even) { background: #fafcfc; }
-  @media (max-width: 42em) { table { font-size: 0.85rem; } th, td { min-width: 6rem; padding: 0.4rem 0.5rem; } }
-
-  // Desktop : les tableaux sortent de la colonne de texte (42 rem) et se centrent
-  // dans la zone disponible (84 rem max) ; le texte courant garde sa largeur.
+  // Tableaux « éditoriaux » : filets horizontaux seulement, en-tête en petites capitales
+  // soulignées, première colonne en gras, survol de ligne. Pas de grille verticale.
+  table { margin: 1.5rem 0 2.25rem; font-size: 0.92rem; line-height: 1.5; word-break: normal; font-variant-numeric: tabular-nums; border-top: 1px solid $line; }
+  th, td { padding: 0.6rem 0.9rem; vertical-align: top; min-width: 7rem; border: 0; border-bottom: 1px solid #e3ecec; }
+  th { background: transparent; color: $teal-deep; text-align: left; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; vertical-align: bottom; border-bottom: 2px solid $teal; }
+  th:first-child, td:first-child { padding-left: 0; }
+  td:first-child { font-weight: 600; color: #1f2a2d; }
+  th:last-child, td:last-child { padding-right: 0; }
+  tbody tr:nth-child(even) { background: transparent; }
+  tbody tr:hover { background: #f3f7f7; }
+  @media (max-width: 42em) {
+    table { font-size: 0.85rem; }
+    th, td { min-width: 6rem; padding: 0.4rem 0.5rem; }
+    th { font-size: 0.72rem; }
+  }
   @media (min-width: 64em) {
-    table { width: min(84rem, 100vw - 4rem); position: relative; left: 50%; transform: translateX(-50%); font-size: 0.95rem; line-height: 1.55; }
-    th, td { min-width: 8rem; padding: 0.6rem 0.9rem; }
+    table { font-size: 0.95rem; line-height: 1.55; }
+    th, td { min-width: 8rem; }
   }
 }
 
 .pager {
   display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem;
-  a { display: block; max-width: 48%; padding: 0.75rem 1rem; border: 1px solid #dce6e6; border-radius: 0.4rem; text-decoration: none; }
+  a { display: block; max-width: 48%; padding: 0.75rem 1rem; border: 1px solid #d5e1e1; border-radius: 0.4rem; text-decoration: none; }
   a:hover { background: #f3f7f7; }
   a span { display: block; font-size: 0.8rem; color: #4a565a; }
   .pager-next { margin-left: auto; text-align: right; }
