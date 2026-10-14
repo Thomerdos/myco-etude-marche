@@ -1,8 +1,10 @@
 # 04 — Critique du projet face au marché
 
 *14 octobre 2026. Critique franche, calibrée sur l'objectif du porteur : **revenu d'appoint**,
-**payant d'abord**, **B2C accessible aux novices**, **moins de 15 h/semaine** en régime de
-croisière, budget non précisé (raisonné à coût quasi nul hors hébergement).*
+**payant d'abord** (produit fini uniquement, sans prévente), **B2C accessible aux novices**,
+périmètre **prospection seule** (aucune identification), développement intensif jusqu'au
+printemps 2027 puis **moins de 15 h/semaine**, coûts en scénario minimal, micro-entreprise en
+création, nom « Myco Map » écarté (décisions du 14/10/2026).*
 
 Chaque point est classé :
 
@@ -109,20 +111,33 @@ sentiers, et accès qui corrèle avec la présence. Si le lift est faible, c'est
 
 ## 5. Juridique et licences
 
-### 🔴 5.1 Responsabilité : la promesse « novice » est la plus risquée du marché
+### 🔴 5.1 Responsabilité : le périmètre « prospection seule » protège, à condition de le tenir
+
+**Décision du porteur (14/10/2026)** : **aucune partie identification**, même pédagogique. Le
+produit dit **où et quand chercher**, et les **bonnes pratiques de cueillette**. C'est la bonne
+décision face au risque :
 
 - La confusion la plus fréquente en 2024 est le **clitocybe de l'olivier pris pour une girolle
-  ou une chanterelle** (Anses). Or myco-map pousse justement vers girolles et chanterelles. Il
-  vise aussi les morilles, qu'on peut confondre avec la gyromitre, toxique.
-- Le porteur veut une promesse « identification, sécurité, bonnes pratiques » pour novices.
-  **L'identification par photo est à proscrire** : 35 à 49 % de réussite mesurée, défiance de
-  l'Anses et d'UFC-Que Choisir, et responsabilité directe en cas d'intoxication.
-- **Action** : la couche novice doit être **pédagogique et défensive**. Fiches « ne pas
-  confondre » par espèce ciblée, règles d'or (tout faire contrôler par un pharmacien ou une
-  société mycologique, ne jamais manger un champignon douteux), numéros des centres antipoison,
-  annuaire des sociétés mycologiques locales, avertissement visible avant chaque export ou
-  itinéraire. Rédiger des **CGU et CGV** qui limitent la responsabilité, avec relecture
-  juridique conseillée (coût **non chiffré**).
+  ou une chanterelle** (Anses). Or le produit oriente vers girolles, chanterelles et morilles,
+  cette dernière pouvant être confondue avec la gyromitre, toxique.
+- L'identification par photo plafonne à 35–49 % de réussite, et l'Anses comme UFC-Que Choisir
+  s'en méfient (doc 03 §2). En ne donnant **aucun avis sur un champignon cueilli**, myco-map
+  sort du terrain où se jouent les intoxications.
+
+**Ce qui reste nécessaire** (cela relève des bonnes pratiques et du cadre légal, pas de
+l'identification) :
+
+1. un **avertissement permanent et visible** : « Cette carte indique des zones à prospecter.
+   Elle ne dit rien de la comestibilité d'un champignon ; faites toujours contrôler votre
+   cueillette (pharmacien, société mycologique) » ;
+2. les **bonnes pratiques de cueillette** : quotas, propriété, respect du milieu (couper ou
+   tourner sans arracher, ne pas ratisser), saisons de chasse, sécurité en montagne ;
+3. des **CGU et CGV** qui décrivent le service comme une aide à la prospection, sans garantie
+   de récolte. Relecture juridique conseillée (coût **non chiffré**).
+
+**Conséquence produit** : retirer de la feuille de route toute « fiche confusion » ou tout
+« guide d'identification ». La promesse « accessible aux novices » repose sur la **simplicité
+de la carte** et sur les **bonnes pratiques**, pas sur la reconnaissance des espèces.
 
 ### 🔴 5.2 Météo : l'offre gratuite d'Open-Meteo interdit l'usage commercial
 
@@ -167,7 +182,8 @@ En forêt publique soumise au régime forestier, une autorisation est présumée
 arrêté contraire. Un novice lira « accessible » comme « autorisé ».
 **Action** : ajouter la couche **forêts publiques ONF** (open data, [data.gouv](https://www.data.gouv.fr/datasets/forets-publiques-diffusion-publique/informations),
 documentation lacunaire), renommer « accès » en « marche estimée », afficher les arrêtés
-préfectoraux connus du massif. Ce trou de marché devient un argument de vente.
+préfectoraux connus du massif. Ce trou de marché devient un argument de vente, au cœur des
+« bonnes pratiques ».
 
 ### 🟠 5.6 Sécurité en montagne
 
@@ -188,11 +204,21 @@ L'itinéraire autorise **500 m d'approche hors sentier jusqu'à 40° de pente**
   [CNIL](https://cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles)). Faire de la
   vie privée un argument, comme Boletik avec ses spots chiffrés en local.
 
-### 🟡 5.8 Statut et obligations du vendeur
+### 🟠 5.8 Micro-entreprise en création : obligations et coûts
 
-Vendre implique un statut (micro-entreprise ou autre), des mentions légales, des CGV avec
-droit de rétractation sur le contenu numérique et une politique de remboursement. **Non
-instruit ici** : à vérifier auprès d'une source officielle avant la première vente.
+Le porteur créera une **micro-entreprise** (régime classique). Points à intégrer, **à confirmer
+sur urssaf.fr, impots.gouv.fr et service-public.fr** (seules des sources secondaires ont été
+consultées) :
+
+| Sujet | Ce que disent les sources | Effet sur le projet |
+|---|---|---|
+| Nature de l'activité | Vente d'accès numériques à des particuliers : *prestation de services* (classement BIC ou BNC à confirmer au moment de la déclaration) | Détermine le taux de cotisations |
+| **Cotisations sociales** | **21,2 %** du chiffre d'affaires pour les prestations de services BIC, 25,6 % pour les BNC du régime général ; plus 0,1 à 0,3 % de formation professionnelle (sources secondaires concordantes, par exemple [portail-autoentrepreneur.fr](https://www.portail-autoentrepreneur.fr/academie/statut-auto-entrepreneur/cotisations)) ; réduction **ACRE** possible au démarrage (modalités divergentes selon les sources) | Sur un pass à 19 €, ~4 € de cotisations (§3.4 du doc 05) |
+| **TVA** | Franchise en base jusqu'à **37 500 €** de prestations de services (seuil majoré 41 250 €) ; le seuil unique à 25 000 € a été abandonné en novembre 2025 ([comptabook.fr](https://comptabook.fr/tva/seuil-franchise-tva-2026/), à confirmer sur service-public.fr) | Pas de TVA facturée : le prix affiché est le prix encaissé ; en contrepartie, **la TVA payée sur les dépenses n'est pas récupérable** (coûts à compter TTC) |
+| **Médiateur de la consommation** | **Obligatoire** pour vendre à des particuliers, en ligne ou non ; mention dans les CGV ; amende administrative possible en cas d'oubli ; coût d'adhésion **30 à 80 €/an** selon une source commerciale (**non vérifié**) ([portail-autoentrepreneur.fr](https://www.portail-autoentrepreneur.fr/academie/creation-auto-entreprise/mediation-consommation)) | Ligne de coût récurrente ajoutée au doc 05 §4 |
+| Mentions légales, CGV, droit de rétractation sur contenu numérique | Obligatoires ; conditions de renonciation au droit de rétractation à rédiger avec soin | Inclus dans la relecture juridique (**non chiffré**) |
+| CFE, compte bancaire dédié, impôt sur le revenu (barème ou versement libératoire de 1,7 % en BIC services, option) | **Non instruits** en détail | À vérifier à la création |
+| Dépôt de marque INPI | ~**190 €** pour une classe, +40 € par classe ; renouvellement à 10 ans (sources secondaires, par exemple [captaincontrat.com](https://www.captaincontrat.com/articles-creation-entreprise/cout-depot-marque-inpi)) | Coût ponctuel, conseillé une fois le nom choisi (doc 05 §9) |
 
 ## 6. UX et onboarding (cible novice)
 
@@ -202,8 +228,8 @@ instruit ici** : à vérifier auprès d'une source officielle avant la première
 | Aucun onboarding ; ouverture sur une carte de 5 800 km² | 🟠 | Parcours en 3 étapes : espèce → « près de moi » ou « mon massif » → « quand y aller ». Premier bénéfice en moins de 60 s |
 | Pensé ordinateur ; un seul point de rupture à 720 px | 🔴 pour un usage terrain | Conception mobile d'abord (la carte se consulte sur le terrain) |
 | Le score affiché est un indice, pas une probabilité (mention présente) | 🟡 bon point | Garder ; c'est exactement l'incompréhension relevée chez les concurrents (« 80 % ≠ 80 % de chances ») |
-| Branding incohérent (« Forage Mapper » dans le `<title>`, « Myco Map » ailleurs) ; nom générique proche de Mycora, MycoDB, MycoLog… | 🟡 | Choisir un nom distinctif et vérifier sa disponibilité (marque, domaine, stores) |
-| Pas de fiches espèces ni de calendrier lisible | 🟠 | Fiches courtes par espèce : habitat, saison, confusions, règles |
+| Branding incohérent (« Forage Mapper » dans le `<title>`, « Myco Map » ailleurs) ; « Myco Map » **écarté** par le porteur | 🟡 | Choisir dans la shortlist du doc 05 §9, puis déposer domaine et marque |
+| Pas de calendrier lisible par espèce | 🟠 | Fiches courtes **de prospection** par espèce : habitat, altitude, saison, délai après la pluie ; **aucun contenu d'identification** |
 
 ## 7. Qualité et maintenabilité, à moins de 15 h/semaine
 
@@ -262,8 +288,9 @@ score vendues sont des œuvres produites à partir de ces couches.
 | **A. Publier les seules couches OSM dérivées** (distances à la lisière et à l'eau, réseau d'accès) sous ODbL, ou la description de leur algorithme de dérivation, en gardant le reste séparé (base « collective », §4.5) | Conforme ; le score, la calibration et les données IGN restent propriétaires | Faible : une page de téléchargement ou de documentation |
 | **B. Remplacer OSM par la BD TOPO de l'IGN** (routes, chemins, hydrographie ; Licence Ouverte, attribution seule) et BD Forêt pour le couvert | Plus aucune obligation de partage à l'identique | 1–2 semaines ; **complétude des sentiers BD TOPO face à OSM à tester** sur le massif |
 
-**Recommandation** : A tout de suite (peu coûteux, conforme), B à étudier lors de l'extension
-aux Alpes du Nord. *Lecture de la licence par un non-juriste : à faire confirmer.*
+**Décision du porteur (14/10/2026) : option A.** On publie les seules couches dérivées d'OSM
+(ou leur algorithme de dérivation), séparées du reste. Le score, la calibration et les données
+IGN restent propriétaires. *Lecture de la licence par un non-juriste : à faire confirmer.*
 
 Les **fonds de carte** issus d'OSM tels quels (par exemple un extrait Protomaps auto-hébergé,
 diffusé comme « œuvre produite », [docs Protomaps](https://docs.protomaps.com/basemaps/downloads))
@@ -275,7 +302,7 @@ ne demandent que l'attribution, puisqu'on ne modifie pas la base.
 |---|---|---|---|
 | 1 | Validation GBIF / OpenObs du score (§4) | 🔴 | ~2 jours |
 | 2 | Licences commerciales météo et fonds de carte (§5.2, §5.3) | 🔴 | 1–3 jours + coût récurrent |
-| 3 | Couche sécurité novice + CGU/CGV (§5.1) | 🔴 | 3–5 jours (+ relecture juridique) |
+| 3 | Avertissement « pas d'avis sur la comestibilité », bonnes pratiques de cueillette, CGU/CGV (§5.1) | 🔴 | 2–3 jours (+ relecture juridique) |
 | 4 | Déploiement de production minimal (§3.1) | 🔴 | 2–3 jours |
 | 5 | Paiement, pass, résiliation simple (§3.2) | 🔴 | 3–5 jours |
 | 6 | PWA hors-ligne par massif (§3.4) | 🔴 terrain | 1–2 semaines |
@@ -284,8 +311,9 @@ ne demandent que l'attribution, puisqu'on ne modifie pas la base.
 | 9 | Forêts publiques et « marche estimée » (§5.5) | 🟠 | 2–3 jours |
 | 10 | Polices et CSS hébergés localement (§5.7) | 🟠 | < 1 h |
 | 11 | Tests de non-régression (§7) | 🟠 | 1–2 jours |
-| 12 | Nom, marque (§6) | 🟡 | variable |
-| 13 | Dépôt privé + licence propriétaire + conformité ODbL (§9) | 🔴 | < 1 j (A) ; 1–2 sem (B) |
+| 12 | Nom, domaine et marque (§6, doc 05 §9) | 🟡 | ½ jour + ~190 € de dépôt INPI |
+| 13 | Dépôt privé + licence propriétaire + conformité ODbL, option A retenue (§9) | 🔴 | < 1 jour |
+| 14 | Création de la micro-entreprise, médiateur, mentions légales (§5.8) | 🟠 | ½–1 jour + 30–80 €/an (non vérifié) |
 
 *Les efforts sont des ordres de grandeur pour un développeur seul qui connaît le code ; ce ne
 sont pas des engagements.*

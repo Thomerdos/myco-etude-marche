@@ -98,7 +98,7 @@ doit être remplacé par des entretiens (§9).*
 
 **Arbitrage avec le cadrage « novice-friendly »** : S1 paie (preuve concurrente), S2 est la
 promesse demandée par le porteur. Les deux sont compatibles si le **produit payant vise S1/S3**
-(précision, temps gagné) et que la **couche novice** (sécurité, règles, pédagogie) est incluse
+(précision, temps gagné) et que la **couche novice** (simplicité, règles et bonnes pratiques ; *mise à jour du 14/10/2026 : aucune identification, voir doc 05 §0*) est incluse
 dans le pass. C'est l'angle de Champi : 200 fiches et un annuaire des sociétés mycologiques.
 Vendre principalement à S2 serait plus fragile : faible disposition à payer et alternatives
 gratuites.
@@ -281,8 +281,8 @@ renouvellement piège).
    locaux) selon `customer-research` : rester informel, chercher à se réfuter, finir par « qui
    d'autre devrais-je appeler ? ».
 4. **Sondage Van Westendorp** (30 à 100 réponses) sur le prix du pass massif.
-5. **Pré-vente fondateurs** (liste d'attente plus paiement anticipé) avant le printemps 2027 :
-   la seule preuve qui compte, quelqu'un paie.
+5. **Premières ventes du produit fini** au lancement d'avril 2027 : la seule preuve qui compte,
+   quelqu'un paie. *(La prévente a été écartée par le porteur le 14/10/2026.)*
 
 ---
 

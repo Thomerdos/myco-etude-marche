@@ -6,15 +6,24 @@
 [05 Roadmap](05-roadmap-monetisation.md). Le contexte marketing réutilisable est dans
 [`.agents/product-marketing.md`](../../.agents/product-marketing.md).*
 
-## Objectif retenu par le porteur
+## Cadre retenu par le porteur (décisions du 14/10/2026)
 
-Un **revenu d'appoint** (quelques centaines à quelques milliers d'€/an), **payant d'abord**,
-en **B2C**, sur des zones riches en champignons, mais **accessible aux novices**. Phase de
-développement intensive maintenant, puis **moins de 15 h/semaine**. Budget de développement
-non chiffré. **Pas d'open source** : code, modèles et données préparées restent propriétaires
-(décision du 14/10/2026).
+- **Ambition** : revenu d'appoint (quelques centaines à quelques milliers d'€/an), sans levée
+  de fonds ni recrutement.
+- **Produit** : une **carte de prospection** pour connaître les coins à champignons, et c'est
+  tout. **Aucune identification**, même pédagogique. Bonnes pratiques de cueillette incluses.
+- **Cible** : B2C, zones riches en champignons, **accessible aux novices**.
+- **Modèle** : **payant d'abord**, gratuit très restreint ; **produit fini uniquement, pas de
+  prévente**.
+- **Temps** : développement intensif **jusqu'à la saison des morilles 2027**, puis **moins de
+  15 h/semaine**.
+- **Coûts** : **scénario minimal**, montée ligne par ligne ; relecture juridique non chiffrée.
+- **Statut** : **micro-entreprise à créer** (régime classique).
+- **Code** : **propriétaire** (pas d'open source) ; ODbL : **option A** (publier les couches
+  dérivées d'OSM).
+- **Nom** : « Myco Map » **écarté** ; shortlist proposée (05 §9).
 
-## Les 9 constats clés
+## Les 10 constats clés
 
 1. **Le projet** est un prototype technique solide et honnête (une semaine de développement,
    moteur explicable, relief 5 m, LIDAR HD, 14 jours de projection), limité à une emprise
@@ -37,57 +46,57 @@ non chiffré. **Pas d'open source** : code, modèles et données préparées res
    l'objectif. Attractivité **27/50 : « valider d'abord »**. → [03 §7–8](03-etude-marche.md)
 6. **Bloquants avant de faire payer** : validation du score, **licences commerciales** (l'API
    Open-Meteo gratuite est non commerciale, les tuiles OSM interdisent le hors-ligne),
-   **couche sécurité novice** (le clitocybe de l'olivier confondu avec la girolle est la 1ʳᵉ
-   cause d'intoxication en 2024), déploiement de production, paiement, hors-ligne.
+   **avertissement « la carte ne dit rien de la comestibilité »** et bonnes pratiques de
+   cueillette, déploiement de production, paiement, hors-ligne.
    → [04](04-critique-projet.md)
-7. **L'identification photo est à exclure** : 35 à 49 % de réussite mesurée, défiance de l'Anses,
-   responsabilité. La promesse « novice » doit être pédagogique et préventive.
+7. **Le périmètre « prospection seule » est le bon** : l'identification par photo plafonne à
+   35–49 % de réussite, l'Anses s'en méfie, et la 1ʳᵉ cause d'intoxication en 2024 est une
+   confusion avec la girolle. Le produit ne donne aucun avis sur un champignon cueilli ; la
+   promesse « novice » repose sur la simplicité de la carte et les bonnes pratiques.
+   → [04 §5.1](04-critique-projet.md)
 8. **Code fermé, deux conséquences.** (a) Le dépôt GitHub est **encore public sous MIT** : il faut
    le passer en privé **avant de pousser cette étude**. Le code déjà publié reste sous MIT pour
    qui l'a copié. (b) L'**ODbL** impose de publier les couches dérivées d'OpenStreetMap, ou leur
-   méthode de dérivation, dès qu'un produit qui en est issu est public. Option alternative :
-   remplacer OSM par la BD TOPO de l'IGN. → [04 §9](04-critique-projet.md)
-9. **Coûts récurrents** : **≈ 93 € HT/an** en scénario minimal (VPS ~6 €/mois, SQLite, R2
-   gratuit, météo Météo-France ouverte, Protomaps auto-hébergé, services gratuits), soit
-   **≈ 6 passes** à 19 €. **≈ 760 à 820 €/an** en confort (Open-Meteo 29 $/mois, Resend Pro,
-   supervision payante), soit **≈ 42 à 45 passes**. Charge estimée : **5 à 10 h/semaine en
-   saison**, 1 à 3 h/semaine hors saison. → [05 §4](05-roadmap-monetisation.md)
+   méthode de dérivation, dès qu'un produit qui en est issu est public : **option A retenue**,
+   on publie ces seules couches. → [04 §9](04-critique-projet.md)
+9. **Coûts et micro-entreprise.** Scénario minimal retenu : **≈ 93 € HT/an** (VPS ~6 €/mois,
+   SQLite, R2 gratuit, météo Météo-France ouverte, Protomaps auto-hébergé, services gratuits),
+   soit **≈ 140 à 190 €/an payés** en ajoutant la TVA non récupérable (franchise) et le
+   médiateur de la consommation obligatoire (30 à 80 €/an, non vérifié). Après Stripe et ~21 %
+   de cotisations, un pass à 19 € rapporte **≈ 14,40 €** : **≈ 10 à 14 passes** couvrent les
+   coûts. Scénario confort : ≈ 840 à 1 065 €/an (≈ 58 à 74 passes). Charge : **5 à 10 h/semaine
+   en saison**, 1 à 3 h/semaine hors saison. → [05 §3.4 et §4](05-roadmap-monetisation.md)
+10. **Nom** : 8 propositions avec domaines .fr et .com non enregistrés au 14/10/2026 ;
+    recommandation **Le Bon Versant**, puis **La Bonne Pousse**. Les marques ne sont pas
+    vérifiées à l'INPI. → [05 §9](05-roadmap-monetisation.md)
 
 ## Recommandation
 
-**Positionnement** : « la carte de prospection des massifs de montagne », un gros poisson dans
-une petite mare (Alpes du Nord d'abord, puis un massif par an). Pas la France entière.
+**Positionnement** : dans la catégorie que les clients cherchent (« coins à champignons »),
+être **la carte de prospection des massifs de montagne** ; un gros poisson dans une petite
+mare (Alpes du Nord d'abord, puis un massif par an). Pas la France entière.
 
 **Offre** : un secteur vitrine gratuit et un bulletin de pousse comme seul gratuit ; **Pass
 Saison massif à 19 €** (à tester entre 15 et 25 €) ; **Pass tous massifs à 29 €** ; carte
-imprimée hors saison. Garantie de remboursement de 14 jours, **pas de renouvellement automatique
-par défaut**, **100 passes fondateurs** avant la saison des morilles 2027.
+imprimée hors saison à partir de 2028. Remboursement sous 14 jours, **pas de renouvellement
+automatique par défaut**. **Lancement du produit fini** début avril 2027, sans prévente ni
+remise « fondateur ».
 
 **Roadmap** :
 
 | Phase | Période | Contenu | Critère |
 |---|---|---|---|
-| 0 | Maintenant → mi-nov. 2026 | Dépôt privé + licence propriétaire, conformité ODbL, validation GBIF, 10 entretiens, bêta fermée, page d'attente | Écart avec le hasard ≥ ~1,5, sinon re-calibrage |
-| 1 | Nov. 2026 → mars 2027 | Production en scénario minimal (~93 €/an), météo Météo-France ou Open-Meteo, fonds Protomaps, tuiles statiques + météo planifiée, PWA hors-ligne, mode simple, sécurité, forêts publiques, Stripe, Alpes du Nord | ≥ 30 passes fondateurs au 31/03/2027, sinon revoir l'offre |
-| 2 | Avr.–mai 2027 | Saison des morilles = test payant ; sondage Van Westendorp | Conversion mesurée |
-| 3 | Juin–nov. 2027 | Bulletin automatique, SEO par massif, expositions | Moins de 15 h/semaine |
-| 4 | 2028+ | +1 massif par an (Jura / Doubs, puis Pyrénées) | — |
+| 0 | Maintenant → mi-nov. 2026 | Dépôt privé + licence propriétaire, validation GBIF, 10 entretiens, choix du nom et des domaines, page d'attente sans paiement | Écart avec le hasard ≥ ~1,5, sinon re-calibrage |
+| 1 | Mi-nov. 2026 → fév. 2027 | Produit fini : production en scénario minimal, tuiles statiques + météo planifiée, Météo-France, Protomaps, PWA hors-ligne, mode simple, bonnes pratiques et forêts publiques, conformité ODbL (A), Stripe, Alpes du Nord | 6 à 9 semaines de travail sur ~15 semaines calendaires |
+| 1b | Mars 2027 | Bêta fermée gratuite du produit fini ; création de la micro-entreprise, médiateur, CGU/CGV, INPI | La moitié des testeurs paierait au prix annoncé |
+| 2 | Avr.–mai 2027 | **Lancement**, saison des morilles ; passage sous 15 h/semaine | ≥ 15 passes au 31/05/2027, sinon revoir l'offre |
+| 3 | Juin–nov. 2027 | Bulletin automatique, SEO par massif, expositions | ≥ 50 passes au 30/11/2027 ; < 20 → arrêter ou repositionner |
+| 4 | 2028+ | +1 massif par an (Jura / Doubs, puis Pyrénées), carte imprimée | — |
 
-## Questions ouvertes pour le porteur
+## Questions encore ouvertes
 
-*Réglées : open source (non), estimation des coûts récurrents (05 §4).*
-
-1. **Scénario de coûts** : minimal (~93 €/an, recommandé au départ), intermédiaire (~390 à
-   425 €/an) ou confort (~760 à 820 €/an) ?
-2. Budget pour une **relecture juridique** (CGU/CGV, lecture de l'ODbL) ?
-3. **Nombre de semaines** disponibles pour la phase initiale (la phase 1 représente environ
-   6 à 9 semaines) ?
-4. Confirmez-vous une promesse « identification » limitée à la **pédagogie, sans photo** ?
-5. Statut de vendeur existant ?
-6. Garder le nom « Myco Map » ou en chercher un distinctif ?
-7. D'accord pour une **pré-vente** de passes fondateurs avant la livraison complète ?
-8. Données OSM : **publier les couches dérivées** (option A, peu coûteuse) ou **migrer vers la
-   BD TOPO** (option B, 1 à 2 semaines) ?
+1. **Budget de relecture juridique** (CGU/CGV, lecture de l'ODbL) : non chiffré.
+2. **Choix final du nom** dans la shortlist, après recherche d'antériorité INPI.
 
 ## Incertitudes principales
 
@@ -97,12 +106,15 @@ par défaut**, **100 passes fondateurs** avant la saison des morilles 2027.
   connecté).
 - **Chiffres d'affaires** concurrents : aucun n'est publié ; audiences auto-déclarées.
 - **Prix** non vérifiés : Champi (39,99 ou 59,99 €/an), Sporecast en euros, Expert de
-  Cueillette, Coins à champignons, domaine .fr (~7,79 € selon une source non officielle). Les
+  Cueillette, Coins à champignons, domaine .fr (~7,79 € selon une source non officielle),
+  médiateur de la consommation (30 à 80 €/an), dépôt INPI (~190 €), taux de cotisations
+  (sources secondaires, à confirmer sur urssaf.fr). Les
   prix Hetzner viennent d'un comparateur tiers. Le prix Open-Meteo (29 $/mois) vient du blog
   de l'éditeur, la page de prix en ligne n'affichant pas les montants.
 - **Licences** à confirmer : LIDAR HD (fiche produit), EcoDataCube, Charm-50 (source officielle),
   données ouvertes Météo-France, conditions hors-ligne des fonds IGN.
 - **Efficacité du modèle** : inconnue tant que la validation de la phase 0 n'est pas faite.
+- **Marques** : aucune recherche INPI ou EUIPO n'a pu être faite pour la shortlist de noms.
 
 ## Sources principales
 
@@ -151,6 +163,13 @@ par défaut**, **100 passes fondateurs** avant la saison des morilles 2027.
 - MapTiler : <https://www.maptiler.com/cloud/pricing/> ; Protomaps : <https://docs.protomaps.com/basemaps/downloads>
 - Scaleway (base managée) : <https://www.scaleway.com/fr/tarifs/managed-databases>
 - Météo-France AROME (Licence Ouverte) : <https://data.gouv.fr/en/datasets/donnees-du-modele-atmospherique-arome-a-aire-limitee-a-haute-resolution>
+
+**Micro-entreprise et marque**
+- Cotisations : <https://www.portail-autoentrepreneur.fr/academie/statut-auto-entrepreneur/cotisations>
+- Franchise de TVA : <https://comptabook.fr/tva/seuil-franchise-tva-2026/>
+- Médiation de la consommation : <https://www.portail-autoentrepreneur.fr/academie/creation-auto-entreprise/mediation-consommation>
+- Dépôt INPI : <https://www.captaincontrat.com/articles-creation-entreprise/cout-depot-marque-inpi>
+- Registres de domaines (RDAP) : <https://rdap.nic.fr/>, <https://rdap.verisign.com/com/v1/>
 
 **Licences et conformité**
 - ODbL 1.0 : <https://opendatacommons.org/licenses/odbl/1-0/>
