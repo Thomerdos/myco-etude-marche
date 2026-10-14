@@ -1,0 +1,14 @@
+# Étude de marché — carte de prospection mycologique
+
+*Document confidentiel — usage privé. Établie le 14 octobre 2026.*
+
+**Objectif produit** : une carte pour connaître les coins à champignons en France (prospection par massif), payante, accessible aux novices, en visant un revenu d'appoint.
+
+## Sommaire
+
+- [00 — Synthèse exécutive](00-synthese-executive.md)
+- [01 — Audit du projet actuel](01-audit-projet.md)
+- [02 — Benchmark concurrentiel](02-benchmark-concurrentiel.md)
+- [03 — Étude de marché](03-etude-marche.md)
+- [04 — Critique du projet](04-critique-projet.md)
+- [05 — Roadmap & monétisation](05-roadmap-monetisation.md)
