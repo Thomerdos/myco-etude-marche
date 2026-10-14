@@ -6,6 +6,7 @@ title: "Journal des modifications"
 
 Historique des révisions de l'étude et du site, du plus récent au plus ancien. Dates et heures exactes issues de l'historique du dépôt.
 
+- **14/10/2026 à 13:16** — Refonte légère des tableaux validée avec impeccable : grille éditoriale (bord gauche commun, conteneur 80 rem), filets horizontaux, en-têtes en petites capitales, chiffres tabulaires ; suppression du débord centré.
 - **14/10/2026 à 13:09** — Tableaux élargis sur grands écrans : largeur dédiée (jusqu'à 84 rem) hors de la colonne de texte, pour les tableaux des documents 02 et 05.
 - **14/10/2026 à 12:51** — Heure de dernière mise à jour (JJ/MM/AAAA à HH:MM) et création de ce journal des modifications.
 - **14/10/2026 à 12:49** — Ajout de la date et de l'heure de dernière mise à jour : pied de page sur chaque page, date de publication et de mise à jour en tête de l'accueil.
