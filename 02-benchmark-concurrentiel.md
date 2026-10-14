@@ -6,7 +6,7 @@
 ## Méthode et conventions
 
 - **Observé** = ce que dit une source (URL citée, date du relevé). **Inféré** = notre lecture,
-  étiquetée comme telle. **Implication** = ce que cela suggère pour myco-map, formulé comme une
+  étiquetée comme telle. **Implication** = ce que cela suggère pour Le Bon Versant (nom commercial retenu ; dépôt `myco-map`), formulé comme une
   option.
 - **« Non observé » ≠ « absent »** : une fonction qui n'apparaît pas sur les pages consultées est
   notée « non observé (pages consultées, 10/2026) ».
@@ -20,7 +20,7 @@
 
 ## 1. Cartographie du marché en 5 familles
 
-| Famille | Acteurs | Rapport à myco-map |
+| Famille | Acteurs | Rapport à Le Bon Versant |
 |---|---|---|
 | **A. Cartes de prévision / biotopes (direct)** | Mycora, Champi (champimap), Chasseurs de champignons, The Mycologist, Boletik, Champiscope, Mapignon, Waldschatzfinder, Sporecast, Expert de Cueillette, les-champignons.fr | **Concurrence directe** |
 | **B. Cartes « coins » vendues à l'unité** | Les Cartes Terroirs (papier), Coins à champignons | Concurrence secondaire (même promesse, autre format) |
@@ -61,7 +61,7 @@ Géoportail et Champiscope, deux outils gratuits
   quotidienne, freemium clair.
 - **Faiblesses** : résolution et méthode opaques ; facturation mensuelle mal adaptée à une
   activité saisonnière (*inféré*) ; incohérences sur la page de prix.
-- **Implication** : Mycora occupe le créneau « France entière, mensuel ». myco-map ne peut pas
+- **Implication** : Mycora occupe le créneau « France entière, mensuel ». Le Bon Versant ne peut pas
   l'attaquer de front sur la couverture.
 
 ### 2.2 Champi — champimap.com (« Champi · Carte Champignons »)
@@ -92,7 +92,7 @@ officielle.** Délai de rétractation de 14 jours mentionné sur
 - **Faiblesses** : sources de données non nommées, résolution non indiquée, faible base
   installée (si le chiffre agrégateur est juste).
 - **Implication** : Champi valide le **prix par zone géographique**, la valeur du hors-ligne et
-  l'angle pédagogique. C'est le concurrent le plus proche de ce que myco-map pourrait devenir.
+  l'angle pédagogique. C'est le concurrent le plus proche de ce que Le Bon Versant pourrait devenir.
 
 ### 2.3 Chasseurs de champignons — chasseursdechampignons.com
 
@@ -223,7 +223,7 @@ vers du matériel.
 
 - [github.com/rgcomgraphic-13/champi-aix](https://github.com/rgcomgraphic-13/champi-aix) :
   prévision Aix-en-Provence, grille de 25 m, Open-Meteo + BD Forêt + Terrarium, même principe
-  que myco-map (météo × biotope par espèce).
+  que le moteur myco-map (météo × biotope par espèce).
 - **Implication** : l'approche « météo + biotope » est **reproductible par un passionné**. La
   barrière à l'entrée tient aux données fines et à la validation, pas au principe.
 
@@ -265,7 +265,7 @@ les forums généralistes (Futura-Sciences).
 | Champiscope | France | Commune / secteur | 7 j (compte gratuit) | **Oui** | Non observée | Non observé | Non | Gratuit |
 | Mapignon | France | 9 M de zones | J à J+7 | Liste des données | Non observée | Non observé | Non observé | 1 €/mois |
 | Waldschatzfinder | Europe | Point | 10 j | Non | « Vérifié sur des trouvailles » (non chiffré) | Pages en cache | Retour GPS | Gratuit (dons) |
-| **myco-map** | **1 zone de 5 800 km²** | **50 m (LIDAR HD, MNT 5 m)** | **14 j par espèce** | **Oui, sourcée** | **Non** | **Non** | **Oui (GPX, KMZ)** | — |
+| **Le Bon Versant** (prototype `myco-map`) | **1 zone de 5 800 km²** | **50 m (LIDAR HD, MNT 5 m)** | **14 j par espèce** | **Oui, sourcée** | **Non** | **Non** | **Oui (GPX, KMZ)** | — |
 
 ## 5. Grille ASO appliquée aux fiches concurrentes (`aso`)
 
@@ -281,7 +281,7 @@ qualitativement, sur ce qui est observable.
 | Boletik (Play) | Non relevée | — | 2026 | Fiche non consultée |
 
 **Constat** : les mots-clés « carte », « champignons », « cèpes », « coins » et « prévision »
-sont déjà travaillés. Une future fiche myco-map devrait viser la longue traîne géographique et
+sont déjà travaillés. Une future fiche Le Bon Versant devrait viser la longue traîne géographique et
 montagne (voir 05).
 
 ## 6. Carte de positionnement
@@ -291,7 +291,7 @@ montagne (voir 05).
                                  ▲
              Champiscope ●       │        ● Boletik
                                  │
-          (gratuit, indice)      │       ◎ myco-map (cible)
+          (gratuit, indice)      │       ◎ Le Bon Versant (cible)
                                  │
   Indice large ◄─────────────────┼─────────────────► Précision locale
   (département, commune)         │                  (maille, itinéraire)

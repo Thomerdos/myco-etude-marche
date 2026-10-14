@@ -16,13 +16,13 @@ critères d'arrêt), `aso` (si passage aux stores).*
 | Open source | **Non** : code, modèles et données préparées propriétaires | Dépôt à passer en privé ; **option A** retenue pour l'ODbL (doc 04 §9) |
 | Coûts | **Scénario minimal** au départ, montée ligne par ligne si besoin ; relecture juridique **non chiffrée** | §4 |
 | Statut | **Micro-entreprise en création** (régime classique) | Franchise de TVA, cotisations sur le chiffre d'affaires, médiateur obligatoire (doc 04 §5.8) |
-| Nom | « Myco Map » **écarté** | Shortlist au §9 ; le choix final revient au porteur |
+| Nom | **« Le Bon Versant »** retenu (« Myco Map » écarté) | Suites pratiques au §9 : domaines, marque, renommage du dépôt plus tard |
 
 ---
 
 ## 1. Positionnement (chaîne de Dunford, via `product-marketing`)
 
-| Maillon | Contenu pour myco-map |
+| Maillon | Contenu pour Le Bon Versant |
 |---|---|
 | **Alternatives réelles** | (1) Expérience et bouche-à-oreille ; (2) Géoportail (BD Forêt) + carte IGN, gratuits ; (3) indices gratuits (Champiscope, les-champignons.fr) ; (4) cartes payantes France entière (Mycora, Champi, Chasseurs de champignons) |
 | **Attributs uniques** | Relief 5 m et canopée LIDAR HD à 50 m en montagne ; « pourquoi ici » par maille ; fenêtre de pousse à 14 jours par espèce ; itinéraire parking → zone avec temps de marche ; **validation publiée** (résultats chiffrés, pas le code, à produire) |
@@ -56,7 +56,7 @@ Alex Hormozi (offre), et Byron Sharp, **contradicteur désigné**, qui se méfie
 différenciation et de la niche.
 
 **Dunford — positionnement contre les vraies alternatives.** Sa première question : que ferait
-le client si myco-map n'existait pas ? Réponse : Géoportail le soir, ou Champi. Les attributs
+le client si Le Bon Versant n'existait pas ? Réponse : Géoportail le soir, ou Champi. Les attributs
 qu'aucune alternative n'a sont la précision de montagne, l'explication et l'itinéraire. Ils ne
 valent quelque chose que pour ceux qui cherchent dans des **terrains raides et variés**. Elle
 choisirait le style « gros poisson, petite mare » et refuserait de créer une catégorie.
@@ -137,7 +137,7 @@ pousse à résilier après la poussée ; c'est le problème vécu chez Chasseurs
 | **Bonus** (réels, pas gonflés) | Calendrier de pousse par espèce et par massif ; export GPX vers l'appli de randonnée de l'utilisateur ; règles de cueillette du département (quotas, propriété, arrêtés) ; guide des bonnes pratiques (prélèvement, respect du milieu, sécurité en montagne) |
 | **Garantie** | **Remboursement intégral sous 14 jours, sans justification** ; **pas de renouvellement automatique par défaut** (rappel par e-mail, renouvellement en un clic). C'est le contre-pied direct des avis négatifs sur Chasseurs de champignons. *Conditions à relire juridiquement (droit de rétractation sur contenu numérique).* |
 | **Urgence réelle** | **Pas de prévente ni de passes fondateurs** (choix du porteur). La seule urgence est **la saison elle-même** : le pass s'achète quand la pluie annonce une poussée, et le bulletin le rappelle. Pas de faux compte à rebours, pas de rareté inventée |
-| **Nom** | « Pass Saison [nom du massif] » ; nom de marque à choisir dans la shortlist du §9 |
+| **Nom** | **Le Bon Versant** — « Pass Saison Chartreuse », « Pass Saison Vercors »… (un pass par massif) ; « Pass Montagne » pour tous les massifs |
 | **Prix et paiement** | Paiement unique annuel via Stripe Checkout ; Customer Portal pour factures et remboursements ; mention « TVA non applicable » tant que la franchise s'applique (micro-entreprise, doc 04 §5.8) |
 
 ### 3.3 Arbitrages assumés
@@ -309,10 +309,10 @@ juin–nov. 2027      Phase 3  saison principale
 
 | Action | AARRR | Effort | Impact | Critère de succès / d'arrêt |
 |---|---|---|---|---|
-| **Passer le dépôt GitHub en privé avant tout push**, remplacer la licence MIT par « tous droits réservés », mettre à jour README / `ATTRIBUTION.md` / `AGENTS.md` (doc 04 §9.1) | — | < 1 h | 🔥 Protège la stratégie et le code futur | Fait **avant** de pousser cette étude |
+| **Passer le dépôt de code en privé**, remplacer la licence MIT par « tous droits réservés », mettre à jour README / `ATTRIBUTION.md` / `AGENTS.md` (doc 04 §9.1). L'étude reste publiée volontairement sur GitHub Pages | — | < 1 h | 🔥 Protège le code futur | Dépôt de code privé |
 | **Validation GBIF / OpenObs** du score sur l'Isère (doc 04 §4) | Revenu (preuve) | ~2 j | 🔥 Élevé | Écart avec le hasard ≥ ~1,5 pour au moins le cèpe ou la girolle, sinon **re-calibrage avant de construire la suite** |
 | **10 entretiens** de cueilleurs (expositions mycologiques d'octobre, sociétés de la FMBDS, groupes locaux) | Toutes étapes | ~10 h | 🔥 Élevé | Phrases exactes sur les douleurs, prix évoqués, et les 3 fonctions jugées indispensables |
-| **Choix du nom** dans la shortlist (§9), réservation des domaines .fr et .com, recherche d'antériorité INPI | Acquisition | ~½ j | Moyen | Nom retenu, domaines réservés |
+| **Le Bon Versant** : réserver **tout de suite** `lebonversant.fr` et `lebonversant.com` (+ variantes à tirets), puis recherche d'antériorité INPI (§9) | Acquisition | ~½ j | 🔥 Élevé (le nom est public via l'étude) | Domaines réservés ; aucune antériorité bloquante |
 | Volumes de recherche (Keyword Planner) : « coins à champignons + massif » | Acquisition | ~2 h | Moyen | Volume par massif connu |
 | Héberger localement Inter et Leaflet (RGPD) | — | < 1 h | Faible, mais sans regret | — |
 | Page d'attente : promesse, **inscription au bulletin et à la liste de lancement, sans paiement** | Acquisition | ~1 j | Élevé | ≥ 100 inscrits avant le lancement d'avril 2027 |
@@ -329,7 +329,7 @@ absorbe les fêtes de fin d'année et les imprévus.
 | 3 | Météo : **ingestion Météo-France** (0 €, 3–5 j). Repli : Open-Meteo Standard (29 $/mois, ~½ j) si l'ingestion déborde | ½–5 j | Doc 04 §5.2 |
 | 4 | Fonds de carte : **extrait Protomaps auto-hébergé** (hors-ligne autorisé, attribution OSM) | 1–2 j | Doc 04 §5.3 |
 | 5 | **PWA hors-ligne** par massif acheté | 1–2 sem | 🔥 Justifie le pass |
-| 6 | **Mode simple + onboarding mobile d'abord** (« où chercher cette semaine ») | 1–2 sem | 🔥 Conversion des novices |
+| 6 | **Mode simple + onboarding mobile d'abord** (« où chercher cette semaine ») ; nom **Le Bon Versant** dans l'interface, à la place de « Forage Mapper » et « Myco Map » | 1–2 sem | 🔥 Conversion des novices |
 | 7 | Forêts publiques ONF + « marche estimée » + plafond de pente en mode novice ; **bonnes pratiques et règles de cueillette** ; avertissement « pas d'avis sur la comestibilité » | 3–4 j | Doc 04 §5.1, §5.5–5.6 |
 | 8 | Calendrier de pousse par espèce et pages de prospection par massif (sans identification) | 2–3 j | Contenu du pass et SEO |
 | 9 | Extension aux **Alpes du Nord** complètes (Savoie, Haute-Savoie), calcul en tâche de fond | 3–5 j | Doc 03 §3 |
@@ -343,7 +343,7 @@ absorbe les fêtes de fin d'année et les imprévus.
   C'est un test qualité, **pas une prévente** : aucun paiement.
 - **Création de la micro-entreprise**, adhésion à un **médiateur de la consommation**, mentions
   légales, CGU/CGV (relecture juridique si un budget est dégagé), Stripe en mode réel.
-- Dépôt de la marque à l'INPI (~190 €, à confirmer).
+- Dépôt de la marque **« Le Bon Versant »** à l'INPI (~190 € pour une classe, ~230 € pour deux, à confirmer), si la recherche d'antériorité est propre (§9).
 - **Critère de passage au lancement** : aucun bug bloquant, et au moins la moitié des testeurs
   disent qu'ils paieraient le pass au prix annoncé.
 
@@ -418,7 +418,7 @@ aucune fiche n'existe encore.*
 - **Google Play** : publier la PWA via une *Trusted Web Activity*, à moindre coût.
   **Apple** : un simple emballage web risque un refus au titre de la règle 4.2 (« fonctionnalité
   minimale ») ; prévoir des fonctions natives (hors-ligne, géolocalisation).
-- **Titre (≤ 30 car.)** : marque + mot-clé, par exemple « Le Bon Versant : champignons » (28 car.) si ce nom est retenu (§9).
+- **Titre (≤ 30 car.)** : marque + mot-clé, « Le Bon Versant : champignons » (28 car.).
   Sous-titre Apple (≤ 30) : « Prévision cèpes et girolles » (27 car.). Champ de mots-clés Apple
   (100 octets, sans répéter le titre) : `alpes,chartreuse,vercors,belledonne,savoie,morilles,cueillette,coins,pousse,randonnee`.
 - **Captures** : les 3 premières disent tout. (1) « Où chercher cette semaine dans votre
@@ -438,16 +438,41 @@ aucune fiche n'existe encore.*
 | Temps | Développement intensif jusqu'au printemps 2027, puis moins de 15 h/semaine |
 | Identification | Supprimée du périmètre : prospection et bonnes pratiques uniquement |
 | Statut | Micro-entreprise à créer (régime classique) |
-| Nom | « Myco Map » écarté ; choix dans la shortlist du §9 |
+| Nom | **Le Bon Versant** (« Myco Map » écarté) |
 | Prévente | Non : lancement du produit fini |
 | ODbL | Option A : publier les couches dérivées d'OSM |
 
 **Restant ouvert** :
 
 1. **Budget de relecture juridique** (CGU/CGV, lecture de l'ODbL) : non chiffré à ce jour.
-2. **Choix final du nom** parmi la shortlist du §9, après une recherche d'antériorité INPI.
+2. **Classes de dépôt INPI** pour « Le Bon Versant » (§9) : à confirmer lors de la recherche
+   d'antériorité.
+3. **Moment du renommage du dépôt** `myco-map` (§9).
 
-## 9. Nom de marque : shortlist
+## 9. Nom de marque : « Le Bon Versant » (retenu)
+
+**Décision du porteur (14/10/2026)** : le produit s'appellera **Le Bon Versant**. `myco-map`
+reste le nom de code du dépôt tant qu'il n'est pas renommé. **Aucun fichier ni dépôt n'a été
+renommé.**
+
+**Pourquoi ce nom tient** : il dit « montagne » et « le bon côté où chercher », ce qui
+correspond au positionnement (§1). Il n'emprunte rien au vocabulaire des concurrents (Myco-,
+Champi-, Cèpe-…). Il laisse la place aux mots-clés dans les titres : « Le Bon Versant :
+champignons » fait 28 caractères (§7). Il nomme aussi naturellement les produits :
+« Pass Saison Chartreuse », « Pass Montagne ».
+
+### Suites pratiques
+
+| # | Action | Quand | Coût | Statut au 14/10/2026 |
+|---|---|---|---|---|
+| 1 | **Réserver `lebonversant.fr` et `lebonversant.com`**, et idéalement `le-bon-versant.fr` et `le-bon-versant.com` (redirections). Urgent : l'étude publique révèle le nom | Immédiatement | ~quelques €/an par domaine (.fr ~7,79 € HT selon une source non officielle ; .com **non vérifié**) | **Non enregistrés** selon les registres (RDAP AFNIC et Verisign), revérifiés le 14/10/2026 pour les quatre variantes. Rien ne garantit qu'ils le restent |
+| 2 | **Recherche d'antériorité** sur [data.inpi.fr](https://data.inpi.fr/) (et EUIPO pour information) : marques identiques ou proches dans les classes visées. Le rapprochement avec **« leboncoin »**, marque notoire, mérite un regard particulier ; aucune analyse juridique n'a été faite ici | Phase 0 | 0 € si on la fait soi-même | **Non faite** : base INPI non interrogeable depuis cette étude |
+| 3 | **Dépôt de marque INPI** si la recherche est propre. Classes de Nice *envisageables* : **9** (application et logiciel téléchargeables) et **42** (logiciel en ligne, SaaS) ; d'autres selon la recherche. **À valider**, idéalement avec un conseil | Phase 1b (mars 2027), avant le lancement | ~190 € pour une classe, +40 € par classe supplémentaire, valable 10 ans (sources secondaires, à confirmer sur inpi.fr) | À faire |
+| 4 | Nom dans le produit : `<title>`, en-tête, e-mails, mentions légales, CGV ; abandon de « Forage Mapper » et « Myco Map » | Phase 1 (ordre 6) | 0 € | À faire |
+| 5 | Identités secondaires (adresse e-mail, comptes sur les réseaux utilisés) | Avec le domaine | 0 € | Non vérifié |
+| 6 | **Renommer le dépôt git** (par exemple `le-bon-versant`) en même temps que son passage en privé ou plus tard, puis mettre à jour le remote local et les mentions dans README / `AGENTS.md`. Le site d'étude `myco-etude-marche` est un dépôt distinct, non concerné | Au choix du porteur | 0 € | **Non fait** (consigne : ne rien renommer) |
+
+### Shortlist étudiée (pour mémoire)
 
 **Méthode** : des noms français, distincts du paysage concurrentiel (Mycora, Champi,
 Champiscope, Chasseurs de champignons, The Mycologist, Mapignon, Boletik, MycoDB, Sporecast,
@@ -481,8 +506,8 @@ Mushroom Map, Coins à champignons, Expert de Cueillette) et cohérents avec le 
 **Écarté au filtre de la confusion** : *MycoTopo* (domaines libres, mais le préfixe « Myco »
 rapproche de Mycora et MycoDB, et du nom déjà écarté).
 
-**Recommandation (non décisionnelle)** : **Le Bon Versant** en premier choix. Il incarne le
+**Recommandation qui avait été faite** (suivie par le porteur) : **Le Bon Versant** en premier choix. Il incarne le
 positionnement montagne, se retient, n'emprunte rien aux concurrents, et laisse la place aux
 mots-clés dans les titres (titre de store en 28 caractères : « Le Bon Versant : champignons »). Second choix : **La
 Bonne Pousse**, qui parle du timing, l'autre moitié de la promesse. **Le choix final revient au
-porteur**, après recherche d'antériorité INPI. Aucun fichier ni dépôt n'a été renommé.
+porteur** ; il a choisi **Le Bon Versant** le 14/10/2026.

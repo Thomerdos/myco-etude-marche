@@ -1,6 +1,7 @@
 # 00 — Synthèse exécutive
 
-*Étude de marché myco-map, 14 octobre 2026. Six documents :
+*Étude de marché **Le Bon Versant** (nom commercial retenu ; nom de code du dépôt : `myco-map`),
+14 octobre 2026. Six documents :
 [01 Audit](01-audit-projet.md) · [02 Benchmark](02-benchmark-concurrentiel.md) ·
 [03 Marché](03-etude-marche.md) · [04 Critique](04-critique-projet.md) ·
 [05 Roadmap](05-roadmap-monetisation.md). Le contexte marketing réutilisable est dans
@@ -21,7 +22,7 @@
 - **Statut** : **micro-entreprise à créer** (régime classique).
 - **Code** : **propriétaire** (pas d'open source) ; ODbL : **option A** (publier les couches
   dérivées d'OSM).
-- **Nom** : « Myco Map » **écarté** ; shortlist proposée (05 §9).
+- **Nom** : **« Le Bon Versant »** retenu (« Myco Map » écarté). Suites pratiques plus bas.
 
 ## Les 10 constats clés
 
@@ -54,9 +55,9 @@
    confusion avec la girolle. Le produit ne donne aucun avis sur un champignon cueilli ; la
    promesse « novice » repose sur la simplicité de la carte et les bonnes pratiques.
    → [04 §5.1](04-critique-projet.md)
-8. **Code fermé, deux conséquences.** (a) Le dépôt GitHub est **encore public sous MIT** : il faut
-   le passer en privé **avant de pousser cette étude**. Le code déjà publié reste sous MIT pour
-   qui l'a copié. (b) L'**ODbL** impose de publier les couches dérivées d'OpenStreetMap, ou leur
+8. **Code fermé, deux conséquences.** (a) Le dépôt de code est **encore public sous MIT** : il
+   faut le passer en privé. L'étude, elle, est publiée volontairement sur GitHub Pages. Le code
+   déjà publié reste sous MIT pour qui l'a copié. (b) L'**ODbL** impose de publier les couches dérivées d'OpenStreetMap, ou leur
    méthode de dérivation, dès qu'un produit qui en est issu est public : **option A retenue**,
    on publie ces seules couches. → [04 §9](04-critique-projet.md)
 9. **Coûts et micro-entreprise.** Scénario minimal retenu : **≈ 93 € HT/an** (VPS ~6 €/mois,
@@ -66,9 +67,10 @@
    de cotisations, un pass à 19 € rapporte **≈ 14,40 €** : **≈ 10 à 14 passes** couvrent les
    coûts. Scénario confort : ≈ 840 à 1 065 €/an (≈ 58 à 74 passes). Charge : **5 à 10 h/semaine
    en saison**, 1 à 3 h/semaine hors saison. → [05 §3.4 et §4](05-roadmap-monetisation.md)
-10. **Nom** : 8 propositions avec domaines .fr et .com non enregistrés au 14/10/2026 ;
-    recommandation **Le Bon Versant**, puis **La Bonne Pousse**. Les marques ne sont pas
-    vérifiées à l'INPI. → [05 §9](05-roadmap-monetisation.md)
+10. **Nom retenu : Le Bon Versant.** Il dit « montagne » et « le bon côté où chercher » et
+    n'emprunte rien aux concurrents. Les domaines `lebonversant.fr` et `.com` (et leurs
+    variantes à tirets) étaient **non enregistrés** au 14/10/2026 ; la marque n'est **pas
+    vérifiée** à l'INPI. → [05 §9](05-roadmap-monetisation.md)
 
 ## Recommandation
 
@@ -82,11 +84,22 @@ imprimée hors saison à partir de 2028. Remboursement sous 14 jours, **pas de r
 automatique par défaut**. **Lancement du produit fini** début avril 2027, sans prévente ni
 remise « fondateur ».
 
+**Nom et suites pratiques** (détail en 05 §9) :
+
+1. **Réserver immédiatement** `lebonversant.fr` et `lebonversant.com` (+ `le-bon-versant.*`).
+   L'étude est publique et révèle le nom.
+2. **Recherche d'antériorité INPI** (data.inpi.fr), avec une attention particulière au
+   rapprochement avec « leboncoin » ; puis **dépôt de marque** si la voie est libre (classes 9
+   et 42 envisagées, ~190 à 230 €, à confirmer), avant le lancement d'avril 2027.
+3. **Nom dans le produit** pendant la phase 1 : il remplace « Forage Mapper » et « Myco Map ».
+4. **Renommer le dépôt git `myco-map` plus tard**, par exemple `le-bon-versant`, au moment choisi
+   par le porteur. Non fait.
+
 **Roadmap** :
 
 | Phase | Période | Contenu | Critère |
 |---|---|---|---|
-| 0 | Maintenant → mi-nov. 2026 | Dépôt privé + licence propriétaire, validation GBIF, 10 entretiens, choix du nom et des domaines, page d'attente sans paiement | Écart avec le hasard ≥ ~1,5, sinon re-calibrage |
+| 0 | Maintenant → mi-nov. 2026 | Dépôt de code privé + licence propriétaire, domaines Le Bon Versant, antériorité INPI, validation GBIF, 10 entretiens, page d'attente sans paiement | Écart avec le hasard ≥ ~1,5, sinon re-calibrage |
 | 1 | Mi-nov. 2026 → fév. 2027 | Produit fini : production en scénario minimal, tuiles statiques + météo planifiée, Météo-France, Protomaps, PWA hors-ligne, mode simple, bonnes pratiques et forêts publiques, conformité ODbL (A), Stripe, Alpes du Nord | 6 à 9 semaines de travail sur ~15 semaines calendaires |
 | 1b | Mars 2027 | Bêta fermée gratuite du produit fini ; création de la micro-entreprise, médiateur, CGU/CGV, INPI | La moitié des testeurs paierait au prix annoncé |
 | 2 | Avr.–mai 2027 | **Lancement**, saison des morilles ; passage sous 15 h/semaine | ≥ 15 passes au 31/05/2027, sinon revoir l'offre |
@@ -96,7 +109,8 @@ remise « fondateur ».
 ## Questions encore ouvertes
 
 1. **Budget de relecture juridique** (CGU/CGV, lecture de l'ODbL) : non chiffré.
-2. **Choix final du nom** dans la shortlist, après recherche d'antériorité INPI.
+2. **Classes de dépôt INPI** pour « Le Bon Versant », à confirmer à la recherche d'antériorité.
+3. **Moment du renommage** du dépôt `myco-map`.
 
 ## Incertitudes principales
 
@@ -114,7 +128,8 @@ remise « fondateur ».
 - **Licences** à confirmer : LIDAR HD (fiche produit), EcoDataCube, Charm-50 (source officielle),
   données ouvertes Météo-France, conditions hors-ligne des fonds IGN.
 - **Efficacité du modèle** : inconnue tant que la validation de la phase 0 n'est pas faite.
-- **Marques** : aucune recherche INPI ou EUIPO n'a pu être faite pour la shortlist de noms.
+- **Marque « Le Bon Versant »** : aucune recherche INPI ou EUIPO n'a pu être faite ; seuls les
+  domaines ont été vérifiés (registres RDAP, 14/10/2026).
 
 ## Sources principales
 

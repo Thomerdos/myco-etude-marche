@@ -1,6 +1,7 @@
 # 01 — Audit du projet myco-map
 
-*État au 14 octobre 2026, commit `44fd865`. Audit factuel : ce qui marche, ce qui est esquissé,
+*État au 14 octobre 2026, commit `44fd865`. **myco-map** est le nom de code du dépôt ; le nom
+commercial retenu pour le produit est **Le Bon Versant** (décision du 14/10/2026, doc 05 §9). Audit factuel : ce qui marche, ce qui est esquissé,
 ce qui manque. Les jugements de valeur sont réservés au document 04.*
 
 ## 1. Fiche d'identité

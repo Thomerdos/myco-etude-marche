@@ -4,7 +4,8 @@
 **payant d'abord** (produit fini uniquement, sans prévente), **B2C accessible aux novices**,
 périmètre **prospection seule** (aucune identification), développement intensif jusqu'au
 printemps 2027 puis **moins de 15 h/semaine**, coûts en scénario minimal, micro-entreprise en
-création, nom « Myco Map » écarté (décisions du 14/10/2026).*
+création, nom commercial retenu **« Le Bon Versant »** (« Myco Map » écarté) (décisions du
+14/10/2026).*
 
 Chaque point est classé :
 
@@ -18,7 +19,8 @@ Chaque point se termine par une **action** concrète.
 
 ## 1. Verdict en une phrase
 
-myco-map a **le meilleur moteur d'habitat de montagne observé sur le marché français**, mais
+Le Bon Versant (prototype `myco-map`) a **le meilleur moteur d'habitat de montagne observé sur
+le marché français**, mais
 c'est **un moteur sans voiture** : pas de produit déployable, pas de preuve que le score
 prédit quoi que ce soit, des licences d'exploitation non commerciales, et une interface pensée
 pour son auteur plutôt que pour un novice qui sort en forêt avec son téléphone.
@@ -81,7 +83,7 @@ que soit le trafic.
 ### 🔴 3.4 Pas de mode hors-ligne
 
 En montagne, le réseau est souvent absent. Champi et Expert de Cueillette vendent le
-hors-ligne. myco-map n'a ni PWA ni paquets de zones. Le GPX et le KMZ ne compensent qu'en
+hors-ligne. Le prototype n'a ni PWA ni paquets de zones. Le GPX et le KMZ ne compensent qu'en
 partie, via une appli tierce.
 **Action** : PWA avec téléchargement du **massif acheté** (tuiles d'habitat + dernière
 projection météo + fond IGN autorisé hors-ligne, §5.3). C'est la fonction qui justifie le pass
@@ -121,7 +123,7 @@ décision face au risque :
   ou une chanterelle** (Anses). Or le produit oriente vers girolles, chanterelles et morilles,
   cette dernière pouvant être confondue avec la gyromitre, toxique.
 - L'identification par photo plafonne à 35–49 % de réussite, et l'Anses comme UFC-Que Choisir
-  s'en méfient (doc 03 §2). En ne donnant **aucun avis sur un champignon cueilli**, myco-map
+  s'en méfient (doc 03 §2). En ne donnant **aucun avis sur un champignon cueilli**, Le Bon Versant
   sort du terrain où se jouent les intoxications.
 
 **Ce qui reste nécessaire** (cela relève des bonnes pratiques et du cadre légal, pas de
@@ -228,7 +230,7 @@ consultées) :
 | Aucun onboarding ; ouverture sur une carte de 5 800 km² | 🟠 | Parcours en 3 étapes : espèce → « près de moi » ou « mon massif » → « quand y aller ». Premier bénéfice en moins de 60 s |
 | Pensé ordinateur ; un seul point de rupture à 720 px | 🔴 pour un usage terrain | Conception mobile d'abord (la carte se consulte sur le terrain) |
 | Le score affiché est un indice, pas une probabilité (mention présente) | 🟡 bon point | Garder ; c'est exactement l'incompréhension relevée chez les concurrents (« 80 % ≠ 80 % de chances ») |
-| Branding incohérent (« Forage Mapper » dans le `<title>`, « Myco Map » ailleurs) ; « Myco Map » **écarté** par le porteur | 🟡 | Choisir dans la shortlist du doc 05 §9, puis déposer domaine et marque |
+| Branding incohérent (« Forage Mapper » dans le `<title>`, « Myco Map » ailleurs) ; nom retenu : **Le Bon Versant** | 🟡 | Remplacer les deux noms dans l'interface pendant la phase 1 ; réserver les domaines et déposer la marque (doc 05 §9) |
 | Pas de calendrier lisible par espèce | 🟠 | Fiches courtes **de prospection** par espèce : habitat, altitude, saison, délai après la pluie ; **aucun contenu d'identification** |
 
 ## 7. Qualité et maintenabilité, à moins de 15 h/semaine
@@ -258,17 +260,20 @@ d'espèces, poids) et les données préparées restent **propriétaires**.
 ### 🔴 9.1 Le dépôt est encore public sous MIT
 
 Au 14/10/2026, `Thomerdos/myco-map` est **public** sur GitHub sous licence MIT (0 étoile,
-0 fork). Les commits de cette étude ne sont **pas poussés**.
+0 fork). **L'étude de marché, elle, est publiée volontairement** sur GitHub Pages
+(<https://thomerdos.github.io/myco-etude-marche/>), avec l'accord du porteur : stratégie, prix
+et nom retenu sont donc publics. C'est le **code** qu'il faut fermer.
 
 - Le code **déjà publié** reste utilisable sous MIT par quiconque en a obtenu une copie : une
   licence accordée ne se retire pas. La fermeture vaut **pour la suite**.
 - **Action** (par le porteur, car c'est irréversible côté visibilité) :
-  1. passer le dépôt en **privé** **avant** de pousser cette étude, qui contient la stratégie,
-     les prix et les faiblesses ;
+  1. passer le **dépôt de code** en **privé** ;
   2. remplacer `LICENSE` (MIT) par une mention « tous droits réservés » pour les versions
      futures ;
   3. mettre à jour README, `ATTRIBUTION.md` et `AGENTS.md`, qui mentionnent la licence MIT ;
-  4. retirer du dépôt l'archive `data/*.sqlite.gz`, ou au moins cesser de la mettre à jour.
+  4. retirer du dépôt l'archive `data/*.sqlite.gz`, ou au moins cesser de la mettre à jour ;
+  5. **plus tard**, renommer le dépôt (par exemple `le-bon-versant`) et mettre à jour le remote
+     local. **Non fait** : le choix du moment revient au porteur (doc 05 §9).
 - **Conséquence marketing** : l'argument « méthode publiée » disparaît. Il reste l'**explication
   par maille** (dans le produit) et la **validation publiée** (résultats, pas le code). C'est ce
   que fait Boletik.
@@ -311,7 +316,7 @@ ne demandent que l'attribution, puisqu'on ne modifie pas la base.
 | 9 | Forêts publiques et « marche estimée » (§5.5) | 🟠 | 2–3 jours |
 | 10 | Polices et CSS hébergés localement (§5.7) | 🟠 | < 1 h |
 | 11 | Tests de non-régression (§7) | 🟠 | 1–2 jours |
-| 12 | Nom, domaine et marque (§6, doc 05 §9) | 🟡 | ½ jour + ~190 € de dépôt INPI |
+| 12 | « Le Bon Versant » : domaines, recherche d'antériorité, dépôt INPI, nom dans l'interface (§6, doc 05 §9) | 🟠 | ½ jour + ~190–230 € INPI |
 | 13 | Dépôt privé + licence propriétaire + conformité ODbL, option A retenue (§9) | 🔴 | < 1 jour |
 | 14 | Création de la micro-entreprise, médiateur, mentions légales (§5.8) | 🟠 | ½–1 jour + 30–80 €/an (non vérifié) |
 

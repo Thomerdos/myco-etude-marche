@@ -68,7 +68,7 @@ et le Pas-de-Calais doivent leur rang à des réseaux naturalistes actifs ; la N
 pour « l'arc montagneux Jura – Alpes du Nord – Pyrénées est bien documenté », **Faible** pour
 tout classement fin.
 
-**Conséquences pour myco-map** :
+**Conséquences pour Le Bon Versant** :
 1. L'emprise actuelle (Isère, Savoie, Drôme) se trouve **dans le trio de tête** des
    départements les mieux documentés. Ce n'est pas un mauvais point de départ.
 2. Extensions les plus cohérentes avec la force technique (relief fin, LIDAR) : **Savoie et
@@ -121,7 +121,7 @@ gratuites.
 
 - **Poussée** (pourquoi quitter le statu quo) : coins épuisés, pluie ou sécheresse imprévisibles,
   soirées perdues sur Géoportail, peur de se tromper (S2).
-- **Attraction** (vers myco-map) : précision de montagne, « pourquoi ici » explicable, fenêtre
+- **Attraction** (vers Le Bon Versant) : précision de montagne, « pourquoi ici » explicable, fenêtre
   de pousse par espèce, itinéraire et GPX.
 - **Habitude** : mes coins connus, le bouche-à-oreille, un concurrent déjà payé, des outils
   gratuits jugés « suffisants ».
@@ -133,7 +133,7 @@ gratuites.
 | | Fréquence faible | Fréquence élevée |
 |---|---|---|
 | Problème important | | |
-| **Problème modéré** | **← myco-map** (loisir à forte charge affective et gastronomique, ressenti quelques dizaines de jours par an) | |
+| **Problème modéré** | **← Le Bon Versant** (loisir à forte charge affective et gastronomique, ressenti quelques dizaines de jours par an) | |
 
 **Conséquences** : quadrant faible. Un **abonnement mensuel colle mal** à l'usage. Le **pass
 saison ou annuel** correspond à la fréquence réelle. La rétention passe par des déclencheurs
@@ -229,7 +229,7 @@ un tiers (*Faible*). Les ~10 acteurs français semblent être de petites équipe
 **plutôt de l'ordre du million d'euros que de la dizaine de millions**, ce qui est cohérent avec
 la moitié basse du SAM.
 
-### 7.3 Par les canaux — SOM myco-map (1 à 3 ans, solo, < 15 h/semaine)
+### 7.3 Par les canaux — SOM Le Bon Versant (1 à 3 ans, solo, < 15 h/semaine)
 
 | Scénario | Base | Calcul | Revenu annuel |
 |---|---|---|---|
